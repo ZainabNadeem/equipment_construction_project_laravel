@@ -1,0 +1,1459 @@
+
+  @media screen {
+
+
+    
+
+
+    html,body {
+      overflow-x: hidden;
+      padding: 0;
+      margin: 0;
+       
+    }
+
+    .element {
+      margin: 0;
+    }
+    
+  font {
+ 
+      font-family: 'Cairo';  /* تعريف نوع الخط للنص */
+      font-size: 12px; /* تعريف حجم الخط */
+      font-weight: 500;/* تعريف وزن الخط */
+      color:#ffff; /* تعريف لون الخط */
+      padding: 0; /* تعريف التباعد الداخلي للعنصر */
+      line-height: 1.9em;  /* تعريف ارتفاع السطر */
+      word-spacing: 0px; /* تعريف تباعد الكلمات */
+      letter-spacing: -0.2px;/* تعريف تباعد الأحرف */
+    }
+ 
+    h1 {
+      line-height: 2em;
+    }
+
+/* تعريف المتغيرات المخصصة لتخطيط .g-custom */
+.g-custom {
+  --bs-gutter-x: 30px; /* تعريف فجوة الاتجاه الأفقي */
+  --bs-gutter-y: 30px;/* تعريف فجوة الاتجاه العمودي */
+}
+/* تعريف المتغير المخصص لتخطيط .g-custom-x */
+.g-custom-x {
+ --bs-gutter-x: 30px;  /* تعريف فجوة الاتجاه الأفقي */
+}
+
+/* تعريف تأثير التمويه للخلفية */
+#a:hover + #b {
+  background: #ccc;
+}
+
+/* تعريف تأثير الزجاج لقائمة الوكالات */
+#agency-menu {
+  backdrop-filter: blur(10px);
+} 
+.container {
+  width: 80%;
+  z-index: 100; /*يحدد ترتيب تكديس العنصر في الصفحة بفوقية 100.*/
+  position: absolute; /*يحدد نوع التمركز للعنصر بناءً على إحداثياته المحددة.*/
+  top: 0; /*يحدد المسافة بين العنصر والجزء العلوي من العنصر الأب بوحدة em */
+  Left: 0; /* يحدد المسافة بين العنصر والجزء الأيسر من العنصر الأب*/
+  right:0; /*يحدد المسافة بين العنصر والجزء الأيمن من العنصر الأب*/ 
+  justify-content: center;
+  align-items: center;/* يحدد توجيه المحتوى الداخلي للعنصر بحيث يتم توسيطه في الوسط عموديًا وأفقيًا.*/
+   /*يحدد حجم الخط للنص داخل العنصر*/
+  font-size: 12px; /*يحدد لون النص.*/
+  color: #ffffff; /*يحدد مستوى الشفافية للعنصر بقيمة 0.8*/
+  opacity:100; /*يمنع تحديد النص داخل العنصر بواسطة المستخدم */
+  user-select: none; /*يعرض العنصر كعنصر مرن.*/
+  display: flex; /*يحدد توجيه العناصر الداخلية للعنصر الرئيسي عموديًا.*/
+  flex-direction: column; /*يحدد المسافة بين العناصر الداخلية للعنصر الرئيسي.*/
+  gap: 5.2px;  /*يحدد أقصى عرض للعنصر. يحدد المساقات بين ال*/
+  /*max-width: 1000px; يحدد أقصى ارتفاع للعنصر.*/
+  /*max-height: 1000000px; يحدد الهوامش للعنصر تلقائيًا لتوسيطه في العرض.*/
+  margin: auto; /*يحدد الحشو للعنصر.*/
+  padding: 30px; /* يحدد خلفية العنصر بشفافية 0.25.*/
+}
+
+.container .Zano{
+  width: 100%;
+  /*  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity)));يضيف ظل للعنصر بناءً على الخصائص المحددة.*/
+  box-sizing: border-box; /*يحدد نموذج المربع للعنصر ليشمل الحشو والحاشية ضمن الأبعاد المحددة. */
+}
+.container .Zano1 {
+  width: 100%;
+
+  backdrop-filter: blur(2px);
+  border: 1.2px solid rgba(255, 255, 255, 0.281);
+ 
+}
+/* هذا التدف النتحكم الاساسي */
+.container div {
+  margin: 1px;
+  
+}
+
+.outer-div {
+  width: 300px;
+  height: 200px;
+  background-color: lightgray;
+}
+
+.inner-div {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin: 20px;
+}
+
+/*--------------------------------------------------------------
+# Section Title
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title h2:before,
+.section-title h2:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--primary-color);
+  display: inline-block;
+}
+
+.section-title h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.section-title h2:after {
+  margin: 0 0 10px 15px;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*----------------------------------------------------------------------*/
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+/* حدود الخلفيه */
+:root {
+  --color-bg1: rgb(0, 23, 85);  /* تعريف لون الخلفية الأول */
+ /* تعريف لون الخلفية الثاني */
+  --color3: 1, 61, 161; /* تعريف متغيرات الألوان */
+  --color2: 2, 51, 134;
+  --color3: 2, 46, 119;
+  --color4: 1, 61, 161;
+  --color-interactive: 0 , 80, 211; /* تعريف لون تفاعلي */
+  --circle-size: 80%; /* تعريف حجم عنصر الدائرة */
+  --blending: smooth;/* تعريف وضع الدمج */
+  --shadow-opacity: 0.39;
+  --white: #ffffff;
+  --blur: 10px;
+}
+.gradient-bg {
+  width: 100vw;
+  height: 500vh;
+  position: relative;
+  overflow: hidden;
+  background-color:  rgb(1, 11, 41);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
+.gradient-bg svg {
+  display: none;
+}
+
+.gradient-bg .gradients-container {
+  filter: url(#goo) blur(150px);
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-bg .g1 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: Right Right;
+  animation: moveVertical 5s ease infinite;
+  opacity: 2;
+  --blur: 10px;
+}
+
+.gradient-bg .g2 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 400px);
+  animation: moveInCircle 8s reverse infinite;
+  opacity: 1;
+  --blur: 10px;
+}
+
+.gradient-bg .g3 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2 + 200px);
+  Right: calc(50% - var(--circle-size) / 2 - 500px);
+  transform-origin: calc(50% + 400px);
+  animation: moveInCircle 11s linear infinite;
+  opacity: 1;
+}
+
+.gradient-bg .g4 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 200px);
+  animation: moveHorizontal 10s ease infinite;
+  opacity: 0.7;
+}
+
+.gradient-bg .g5 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: calc(var(--circle-size) * 2);
+  height: calc(var(--circle-size) * 2);
+  top: calc(50% - var(--circle-size));
+  Right: calc(50% - var(--circle-size));
+  transform-origin: calc(50% - 800px) calc(50% + 200px);
+  animation: moveInCircle 5s ease infinite;
+  opacity: 2;
+}
+
+.gradient-bg .interactive {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  Right: -50%;
+  opacity: 1.7;
+}
+
+/* تعريف أنمط لعنصر يحمل الهوية #team-members */
+#team-members {
+  display: flex; /* عرض المحتوى بنظام Flex */
+  flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+  gap: 16px; /* المسافة بين العناصر */
+  width: 100%; /* العرض بنسبة 100% */
+  max-width: 550px; /* العرض الأقصى 550 بكسل */
+  margin: auto; /* توسيط العنصر أفقيًا */
+  padding: 50px; /* التباعد الداخلي للعنصر */
+  background: rgba(255, 255, 255, 0.25); /* خلفية العنصر باللون الأبيض وشفافية 0.25 */
+  -webkit-backdrop-filter: blur(var(--blur)); /* تطبيق تأثير الضبابية باستخدام المتغير --blur */
+  backdrop-filter: blur(var(--blur)); /* تطبيق تأثير الضبابية باستخدام المتغير --blur */
+  border-radius: 10px; /* حواف الإطار بنسبة 10 */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* إطار بعرض 1 بكسل ولون أبيض وشفافية 0.08 */
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity))); /* إضافة تأثير الظل بواسطة المتغير --shadow-opacity */
+}
+
+.team-member {
+  z-index: 100;
+  position: relative;
+  display: flex;
+  align-items: Right;
+  flex-wrap: wrap;
+  gap: 16px;
+  min-height: 60px;
+  padding: 16px;
+  background-color: var(--white);
+  border-radius: 24px;
+  font-size: 12px;
+
+}
+.team-member:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.team-member-avatar {
+  width: 3.75rem;
+  height: 3.75rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.team-member-name {
+  display: grid;
+  gap: 0.125rem;
+}
+.team-member-name h3 {
+  font-size: large;
+}
+.team-member-name p {
+  font-size: smaller;
+}
+.team-member-chosen {
+  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.3);
+}
+.team-member-drag {
+  opacity: 0;
+}
+
+
+/* تنسيق قائمة التنقل */
+#nav {
+  width: 100%; /* تحديد عرض قائمة التنقل بنسبة 100% */
+  top: 0; /* تحديد وضعية قائمة التنقل في أعلى عنصرها الأب */
+  Right: 0; /* تحديد وضعية قائمة التنقل في الجهة اليسرى من عنصرها الأب */
+  Left: 0; /* تحديد وضعية قائمة التنقل في الجهة اليمنى من عنصرها الأب */
+  margin: 0; /* إزالة أي هوامش حول قائمة التنقل */
+  padding: 0; /* إزالة أية هامش داخلي داخل قائمة التنقل */
+  list-style: none; /* إزالة الأنماط الافتراضية للقوائم لعناصر القائمة */
+  background: rgba(255, 255, 255, 0.25); /* تعيين لون خلفية شفاف باللون الأبيض لقائمة التنقل */
+  -webkit-backdrop-filter: blur(var(--blur)); /* تطبيق تأثير ضبابية على القائمة باستخدام قيمة المتغير --blur */
+  backdrop-filter: blur(var(--blur)); /* تطبيق تأثير ضبابية على القائمة باستخدام قيمة المتغير --blur */
+  border-radius: 10px; /* إضافة نصف قطر حواف بقيمة 10 بكسل لإعطاء القائمة حواف مستديرة */
+  border: 7px solid rgba(164, 212, 240, 0.25); /* تعيين حدود شفافة بلون أزرق لقائمة التنقل */
+  -webkit-backdrop-filter: blur(var(--blur)); /* تطبيق تأثير ضبابية على الحدود باستخدام قيمة المتغير --blur */
+  backdrop-filter: blur(var(--blur)); /* تطبيق تأثير ضبابية على الحدود باستخدام قيمة المتغير --blur */
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity))); /* إضافة تأثير ظل انسيابي للقائمة */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* إضافة ظل للقائمة لإعطاء تأثير ثلاثي الأبعاد */
+}
+
+.logo-image {
+  width: 50%;
+  height: auto;
+  position: fixed;
+  Right: 0;
+
+}
+.logo {
+  width: 50%; /* تحديد العرض المناسب للشعار */
+  position: fixed; /* تحديد وضعية العنصر على الصفحة */
+  top: 50%; /* تحديد الارتفاع المركزي للشعار */
+  transform: translateY(-50%); /* تحويل العنصر ليتم وضعه بالتوسط العمودي */
+  left: 0; /* تحديد الجهة اليسار للشعار */
+}
+#nav .container {
+  width: 100%;
+  overflow: auto;
+}
+
+.Right {
+  float: Right;
+  width: 40%;
+}
+
+.right {
+  float: right;
+  width: 50%;
+}
+.text-Right{
+  text-align:Right !important; 
+  overflow:hidden !important ;
+  text-align:right !important
+}
+
+#animated-img {
+  position: relative;
+  animation-name: moveUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} 
+.div-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-item {
+  margin-right: 20px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+
+/*style*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+main {
+  overflow: hidden;
+}
+
+a,
+button {
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+/* تعريفات عامة لعنصر القسم */
+.section {
+  display: flex;
+  direction: rtl;
+  justify-content: space-between;
+}
+
+.left-item {
+  align-self: flex-start;
+}
+
+.right-item {
+  align-self: flex-end;
+}
+
+/* تعريفات لعنصر الحاوية */
+.container {
+  max-width: 75rem; /* تحديد العرض الأقصى للحاوية */
+  height: auto; /* تحديد الارتفاع التلقائي للحاوية */
+  margin-inline: auto; /* توسيط الحاوية في المحاور الأفقية */
+  padding-inline: 2.5rem; /* تحديد الهامش الداخلي للحاوية في المحاور الأفقية */
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: Right;
+  align-items: Right;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+  direction: rtl; 
+}
+.navbar-Center {
+  display: flex;
+  align-items: Right;
+  flex: 0 0 17%;
+}
+.navbar-Right {
+  display: flex;
+  margin: Right; 
+  direction: rtl;
+  margin-right: 12px;
+}
+.navbar-left {
+  display: flex;
+  flex: 0 0 17%;
+  direction: ltr;
+  align-items: left;
+  justify-content: flex-end;
+  column-gap: 1.5rem;
+}
+.boxdiv {
+  
+  width: 170px; /* تعديل العرض */
+  height: 20px; /* تعديل الارتفاع */
+  border: 1px solid;
+  background-color: rgba(255, 255, 255);
+  display: flex;
+  align-items: Right;
+  margin-right: 3.5rem;
+  margin-bottom: 100px; /* إضافة هامش أسفل لإنشاء مساحة */
+  margin-top: 10px; /* إضافة المسافة بين قائمة الإنك وحقل البحث وأيقونة اللغة */
+}
+
+
+.boxdiv input[type="text"] {
+  width: 150px;
+ background-color:none;
+  border: none;
+  align-items: center;
+  background-color : none;
+  
+}
+
+.boxdiv .icon {
+  margin-right: 1px;
+  color: black; /* لون أيقونة البحث */
+}
+
+.boxdiv .icon {
+  margin-right: 1px;
+  color: black; /* لون أيقونة اللغة */
+}
+@media only screen and (max-width: 992px) {
+  .navbar-Right, .navbar-right {
+    flex: 0 0 auto;
+  }
+  .navbar-right {
+    align-items: Right;
+  }
+  .navbar-Right {
+    flex: 0 0 100%;
+    order: 3;
+    align-items: Right;
+  }
+
+}
+
+.menu .menu-link::after {
+  content: "|";
+  margin-right: 1rem;
+  margin-left: 0.6rem;
+  color: var(--black-300);
+}
+
+.menu .menu-link_last:last-child::after {
+  content: none; /* Remove the separator for the last menu item */
+}
+
+.navbar .search-container {
+  float: left;
+  margin-Right: 0.1rem;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 12px;
+  border: none;
+  text-align: center;
+}
+
+.navbar .search-container button {
+  float: Left;
+  padding: 10px 10px;
+  text-align: center;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #c70000;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .search-container {
+    float: none;
+    text-align: center;
+  }
+  .navbar a, .navbar input[type=text], .navbar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+  }
+  .navbar input[type=text] {
+    padding: 6px;
+  margin-top: 8px;
+  font-size: 12px;
+  border: none;
+  text-align: center;
+  }
+ 
+}
+@media only screen and (max-width: 992px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    Right: 0;
+    width: 75%;
+    height: 100%;
+    z-index: 100;
+    overflow: hidden;
+    transform: translate(-100%);
+    background-color: var(--white-100);
+    transition: all 0.4s ease-in-out;
+  }
+  .menu.is-active {
+    transform: translate(0%);
+  }
+  .darkmode .menu {
+    background-color: var(--night-300);
+  }
+}
+
+.menu-header {
+  display: none;
+  box-shadow: var(--shadow-medium);
+  direction: rtl;
+}
+
+.menu-item {
+  display: inline-block;
+  line-height: 1.5;
+  padding-right: 0.25rem;
+ 
+}
+.menu-link {
+  font-family: Cairo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: Cairo;
+  display: flex;
+  align-items: Right;
+  justify-content: Right;
+  cursor: pointer;
+  color: var(--black-300);
+  text-transform: capitalize;
+  transition: all 0.25s ease;
+  direction: rtl;
+}
+.menu-link > i.bx {
+  font-size: 1.35rem;
+  transform: rotate(90deg);
+}
+
+.menu-link_last {
+  font-family: Cairo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: Cairo;
+  display: flex;
+  align-items: Right;
+  justify-content: Right;
+ 
+  color: var(--black-300);
+  text-transform: capitalize;
+  transition: all 0.25s ease;
+  direction: rtl;
+  margin-left: 30px;
+}
+.menu-link_last > i.bx {
+  font-size: 1.35rem;
+  transform: rotate(90deg);
+}
+.darkmode .menu-link {
+  color: var(--white-100);
+}
+.menu-icon {
+  display: flex;
+  align-items: Right;
+  justify-content: Right;
+  margin-top: 6px;
+  font-size: 1.45rem;
+  color: var(--black-300);
+  transition: all 0.25s ease;
+}
+.darkmode .menu-icon {
+  color: var(--white-100);
+}
+@media only screen and (min-width: 993px) {
+  .menu-dropdown:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .menu-header {
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: Right;
+    justify-content: flex-start;
+    height: 4rem;
+    z-index: 110;
+    visibility: hidden;
+    background: transparent;
+    direction: rtl; /* Add this line */
+    
+  }
+  
+  /* Rest of the CSS code remains the same */
+  .menu-header.is-active {
+    visibility: visible;
+    background-color: var(--white-100);
+  }
+  
+  .menu-header.is-active > .menu-arrow {
+    display: block;
+  }
+  
+  .darkmode .menu-header.is-active {
+    background-color: var(--night-100);
+  }
+  
+  .menu-arrow {
+    display: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 4rem;
+    text-align: Right;
+  }
+  
+  .menu-arrow > i.bx {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    color: var(--black-300);
+    transition: all 0.25s ease;
+  }
+  
+  .darkmode .menu-arrow > i.bx {
+    color: var(--white-100);
+  }
+  
+  .menu-title {
+    font-family: Cairo;
+    font-size: Cairo;
+    font-weight: 500;
+    line-height: Cairo;
+    text-transform: capitalize;
+    color: var(--black-300);
+  }
+  
+  .darkmode .menu-title {
+    color: var(--white-100);
+  }
+  
+  .menu-inner {
+    height: 100%;
+    margin-top: -3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
+  }
+  
+  .menu-item {
+    display: block;
+    line-height: 1;
+    padding-inline: 0;
+  }
+  
+  .menu-link {
+    justify-content: space-between;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-inline: 1.25rem;
+  }
+  
+  .menu-link > i.bx {
+    margin-Right: 0.5rem;
+    transform: rotate(0deg);
+  }
+}
+
+.submenu {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 1.75rem;
+  padding: 1rem 2rem;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0.25rem;
+  border-top: 2px solid var(--pink-400);
+  background-color: var(--white-100);
+  box-shadow: var(--shadow-medium);
+  transition: all 0.25s ease-in-out;
+}
+.darkmode .submenu {
+  border-top: 2px solid var(--pink-300);
+  background-color: var(--night-300);
+}
+.submenu-inner {
+  flex: 0 0 25%;
+  padding: 0 1rem;
+}
+.submenu-title {
+  font-family: Cairo;
+  font-size: Cairo;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0.75rem 0;
+  color: var(--pink-500);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.darkmode .submenu-title {
+  color: var(--pink-300);
+}
+.submenu-item {
+  display: block;
+  line-height: 1;
+  margin: 0 auto;
+}
+.submenu-link {
+  display: inline-block;
+  font-family: Cairo;
+  font-size: Cairo;
+  font-weight: 500;
+  line-height: Cairo;
+  padding: 0.75rem 0;
+  white-space: nowrap;
+  text-transform: capitalize;
+  color: var(--black-300);
+  transition: all 0.25s ease-in-out;
+}
+.darkmode .submenu-link {
+  color: var(--white-100);
+}
+.submenu-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-block: 0.5rem;
+  object-fit: cover;
+}
+.submenu-image_bronds {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin-block: 0.5rem;
+  object-fit: cover;
+}
+@media only screen and (max-width: 992px) {
+  .submenu {
+    position: absolute;
+    display: none;
+    top: 0;
+    Right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    min-width: auto;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 4rem;
+    opacity: 1;
+    overflow-y: auto;
+    visibility: visible;
+    box-shadow: none;
+    transform: translateX(0%);
+  }
+  .submenu.is-active {
+    display: block;
+  }
+  .submenu-inner {
+    flex: 0 0 100%;
+    padding: 0rem;
+  }
+  .submenu-list {
+    margin-bottom: 1rem;
+  }
+  .submenu-link {
+    display: block;
+  }
+  .submenu-image {
+    margin-top: 0;
+  }
+}
+
+.megamenu {
+  
+  width: 20%;
+  height: 10%;
+  margin: 0 auto;
+  transform: translateX(10%);
+  background: rgba(255, 255, 255, 0.408); /* تعيين لون خلفية شفاف باللون الأبيض لقائمة التنقل */
+  -webkit-backdrop-filter: blur(var(--blur)); /* تطبيق تأثير ضبابية على القائمة باستخدام قيمة المتغير --blur */
+  backdrop-filter: blur(var(--blur)); /* تطبيق تأثير ضبابية على القائمة باستخدام قيمة المتغير --blur */
+}
+.megamenu-column-1 {
+  right: 65%;
+  max-width: 15rem;
+  width: 100%;
+  height: auto;
+}
+.megamenu-column-4 {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: auto;
+  margin: 0 auto;
+}
+.submenu-link:hover {
+  filter: drop-shadow(0 0 10px rgba(1, 50, 135, 0.9)) brightness(1.5);
+  transition: background-color 0.3s; /* تضمين تأثير انتقالي لتغيير اللون بنعومة */
+}
+
+
+@media only screen and (max-width: 992px) {
+  .megamenu {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    min-width: auto;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 4rem;
+    opacity: 1;
+    overflow-y: auto;
+    visibility: visible;
+    transform: translateX(0%);
+    box-shadow: none;
+  }
+}
+
+.switch {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 0.5rem;
+}
+.switch-light, .switch-dark {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform-origin: Right;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in;
+}
+.switch-light {
+  font-size: 1.3rem;
+  visibility: visible;
+  color: var(--black-300);
+}
+.darkmode .switch-light {
+  font-size: 0rem;
+  visibility: hidden;
+}
+.switch-dark {
+  font-size: 0rem;
+  visibility: hidden;
+  color: var(--white-100);
+}
+.darkmode .switch-dark {
+  font-size: 1.3rem;
+  visibility: visible;
+}
+
+.overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.45s ease-in-out;
+}
+@media only screen and (max-width: 992px) {
+  .overlay.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.burger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 1.6rem;
+  height: 1rem;
+  margin-right: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  background: transparent;
+}
+@media only screen and (max-width: 992px) {
+  .burger {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.burger-line {
+  position: absolute;
+  display: block;
+  Right: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 1;
+  border-radius: 1rem;
+  background: var(--black-400);
+}
+.darkmode .burger-line {
+  background: var(--white-100);
+}
+.burger-line:nth-child(1) {
+  top: 0px;
+}
+.burger-line:nth-child(2) {
+  top: 0.5rem;
+  width: 70%;
+}
+.burger-line:nth-child(3) {
+  top: 1rem;
+}
+ 
+/* تعريفات عامة لعنصر الكارت */
+section .card {
+  padding: 1.25em 1.25em;
+  /*   تحديد طول وعرض الهامش الداخلي للكارت */
+  max-width: 16.875rem; /* تحديد العرض الأقصى للكارت */
+  width: 100%; /* تعيين العرض الكامل للكارت */
+  height: 100%; /* تعيين الارتفاع الكامل للكارت */
+  height: 13.875rem; /* تحديد ارتفاع الكارت */
+  font-family: 'Cairo'; /* تعيين خط الكارت */
+  display: grid; /* عرض العناصر داخل الكارت بنظام الشبكة */
+  place-items: center; /* توسيط العناصر داخل الكارت عمودياً وأفقياً */
+  align-items:center; /* توسيط العناصر الفرعية داخل الكارت عمودياً */
+  text-align: center; /* توسيط النص داخل الكارت أفقياً */
+  margin: auto; /* توسيط الكارت في المحاور الأفقية */
+}
+
+/* تعريفات للعنصر الذي يسبق الكارت (::before) */
+section .card::before {
+  position: absolute; /* تحديد وضعية المربع الذي يسبق الكارت */
+  content: ""; /* إضافة محتوى فارغ */
+  top: 0; /* تحديد موضع العنصر من الأعلى */
+  width: 100%; /* تعيين العرض الكامل للعنصر */
+  height: 100%; /* تعيين الارتفاع الكامل للعنصر */
+  align-items: stretch; /* تمديد العناصر داخله على طول العنصر */
+}
+
+/* تعريفات لعنصر العنوان (h2) داخل الكارت */
+section .card h2 {
+  color: #fff; /* تعيين لون العنوان */
+  font-family: 'Cairo'; /* تعيين خط العنوان */
+  letter-spacing: 0.05rem; /* تحديد تباعد الحروف في العنوان */
+  font-size: 40px; /* تحديد حجم العنوان */
+   /*  margin-top: 0.625em; تحديد المسافة العلوية للعنوان */
+ /*   margin-bottom: 0.188em;  تحديد المسافة السفلية للعنوان */
+ /*   margin-bottom: 10px; تحديد المسافة السفلية للعنوان */
+}
+
+/* تعريفات لعنصر الفقرة (p) داخل الكارت */
+section .card p {
+  
+  color: #ffffff; /* تعيين لون النص */
+  font-size: 10px; /* تحديد حجم النص */
+  font-family: 'Cairo'; /* تعيين خط النص */
+   /* تحديد المسافة السفلية للنص */
+  text-align: justify; /* تحديد محاذاة النص */
+  height: 90px; /* تحديد ارتفاع النص */
+  margin: 0 auto;
+  /*  margin-left: 5px;  المسافة الأفقية على الجانب الأيسر */
+  /*  margin-right: 5px; المسافة الأفقية على الجانب الأيمن */
+}
+
+/* تعريفات لعنصر الكارت العلوي */
+section .card-top {
+
+ /* تحديد الموضع العلوي للكالكارت */
+ /* تحديد الموضع الأيسر للكارت */
+ /* تحديد الموضع الأيمن للكارت */
+  display: flex; /* عرض العناصر داخل الكارت بنظام الفليكس */
+  flex-wrap: wrap; /* تلفيف العناصر في حالة الحاجة */
+   /* تحديد المسافة السفلية للكارت */
+  /* توسيط الكارت في المحاور الأفقية */
+}
+
+/* تعريفات للصور داخل الكارت */
+section .card-top .card img {
+  width: 200px; /* تحديد عرض الصورة */
+  height: auto; /* تحديد الارتفاع التلقائي للصورة */
+  margin-bottom: 30px; /* تحديد المسافة السفلية للصورة */
+}
+
+/* تعريفات للأزرار */
+section .my-button {
+ /* تحديد الهامش الداخلي للأزرار */
+  font-weight: bold; /* تحديد سمك الخط للأزرار */
+  width: 200px; /* تحديد عرض الأزرار */
+  height: 50px; /* تحديد ارتفاع الأزرار */
+  font-family: 'Cairo'; /* تعيين خط الأزرار */
+  font-size: 12px; /* تحديد حجم الخط للأزرار */
+  font-weight: 500; /* تحديد سمك الخط للأزرار */
+  color: var(--body-font-color); /* تحديد لون الخط للأزرار */
+  padding: 0; /* إلغاء الهامش الداخلي للأزرار */
+  color:#ffff; /* تحديد لون الخط للأزرار */
+  margin-bottom: 5px; /* تحديد المسافة السفلية للأزرار */
+  border:1px solid rgba(255, 255, 255, 0.048); /* تحديد حدود للأزرار بلون محدد وشفافية */
+  box-shadow: 0 0 10px #00bfff; /* تحديد ظل للأزرار */
+  border-radius:15px; /* تحديد شكل الحواف للأزرار */
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity))); /* تحديد ظل للأزرار */
+  transition: background-color 0.3s, color 0.3s; /* تحديد تأثير التحويل للألوان */
+}
+
+/* تعريفات للأزرار عند المرور عليها بالماوس */
+.my-button:hover {
+  background-color: #ffffff; /* تغيير لون الخلفية عند التحويل */
+  border :1px soild #0d006c; /* تحديد حدود للأزرار بلون واحد عند التحويل */
+  color: #000000; /* تغيير لون الخط عند التحويل */
+  box-shadow: 0 0 10px #00bfff; /* تحديد ظل للأزرار عند التحويل */
+}
+
+/* تعريفات عامة للمسافات الجانبية */
+/* هذا خط عرضي*/
+.my-line {
+  width: 50%;
+  height: 2px;
+  background-color: #000;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* تعريفات لخط رأسي */
+.my-vertical-line {
+  width: 2px; /* عرض الخط */
+  height: 280px; /* ارتفاع الخط */
+  background-color: #000; /* لون الخط */
+  margin-top: 99px; /* هامش علوي للخط */
+  margin-bottom: 1px; /* هامش سفلي للخط */
+  
+}
+
+/* تعريفات لخط بجانب العنوان 8 */
+.title-line {
+  height: 200%; /* ارتفاع الخط بنسبة مضاعفة */
+  display: flex; /* استخدام مرونة العناصر */
+  font-family: 'Cairo ExtraBold'; /* نوع الخط */
+  font-weight: Extra Bold; /* سماكة الخط */
+  align-items: center; /* محاذاة العناصر بشكل عمودي */
+  direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+}
+
+.title {
+  font-size: 150%;
+  margin-right: auto;
+  width:220px;
+  direction: rtl; /* تغيير اتجاه الكتابة إلى اليمين */
+
+}
+.line {
+  width: 1300px;
+  height: 20px;
+  flex-grow: 1;
+  direction: rtl;
+  border-bottom: 4px solid rgb(255, 255, 255);
+}
+.event-container {
+  direction: rtl;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0 0rem;
+
+}
+
+.event {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25em 1.25em;
+  margin:10%;
+  gap: 5.2px; 
+}
+
+.spacer {
+  flex-grow: 1cm;
+}
+.event img {
+  grid-column: 2 / 3;
+  margin-left: 1cm;
+  width: 200px;
+  height: 100%;
+  margin:0 auto;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.5), 0 0 1px 1px rgba(255, 255, 255, 0.689);
+  /*  0 0 20px 10px rgba(0, 0, 255, 0.5), 0 0 1px 1px rgba(255, 255, 255, 0.5); light blue butt*/
+ 
+}
+
+.event-details h3 {
+  grid-column: 1 / 2;
+  width:100%;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family: 'Cairo';  /* تعريف نوع الخط للنص */
+  font-weight: 500;/* تعريف وزن الخط */
+  color: var(--body-font-color); /* تعريف لون الخط */
+  padding: 0; /* تعريف التباعد الداخلي للعنصر */
+  line-height: 1.9em;  /* تعريف ارتفاع السطر */
+  word-spacing: 0px; /* تعريف تباعد الكلمات */
+  letter-spacing: -0.2px;/* تعريف تباعد الأحرف */
+ justify-content: space-between; 
+  justify-content: center;
+  text-align: justify;
+}
+
+.event-details p {
+  font-size: 12px;
+  margin-bottom: 10px;
+  width: 200px;
+  justify-content: space-between; 
+  justify-content: center;
+  text-align: justify;
+  font-family: 'Cairo';  /* تعريف نوع الخط للنص */
+  font-size: 12px; /* تعريف حجم الخط */
+  font-weight: 500;/* تعريف وزن الخط */
+  color: var(--body-font-color); /* تعريف لون الخط */
+  padding: 0; /* تعريف التباعد الداخلي للعنصر */
+  line-height: 1.9em;  /* تعريف ارتفاع السطر */
+
+ 
+  margin: 0 auto;
+}
+
+.event-details .more-link {
+  display: block;
+  padding: 3px 3px;
+ 
+  width: 150px;
+  height: 35px;
+  font-family: 'Cairo';  /* تعريف نوع الخط للنص */
+  font-size: 16px; /* تعريف حجم الخط */
+  font-weight: 200;/* تعريف وزن الخط */
+  color: var(--body-font-color); /* تعريف لون الخط */
+  padding: 0; 
+  color:#ffff;
+ 
+  border:1px solid rgba(255, 255, 255, 0.048); /*يحدد حاشية بسمك 1 بكسل ونوع "solid" بلون محدد بشفافية 0.048.*/
+  box-shadow: 0 0 10px #00bfff;
+  place-items: center;
+  align-items:center;
+  text-align: center;
+  margin: 0 auto;
+  border-radius:15px;
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity)));
+  transition: background-color 0.3s, color 0.3s;
+}
+.event-details a.more-link {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.more-link:hover {
+  background-color: #ffffff;
+  border :1px soild #0d006c;
+  color: #000000;
+  box-shadow: 0 0 10px #00bfff;
+
+
+}
+.my-vertical-line1 {
+  width: 2px;
+  height: 280px;
+  background-color: #000;
+  margin-top: 90px;
+  margin-bottom: 1px;
+}
+
+/* Contact Section - Home Page
+------------------------------*/
+.contact .info-item {
+  padding: 30px;
+}
+
+.contact .info-item i {
+  font-size: 38px;
+  line-height: 0;
+  color: var(--primary-color);
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  background: rgba(var(--default-color-rgb), 0.03);
+  padding: 30px;
+  height: 100%;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: var(--background-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--primary-color);
+  border-top-color: var(--background-color);
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: rgba(var(--background-color-rgb), 0.5);
+  border-color: rgba(var(--default-color-rgb), 0.2);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.contact .php-email-form input[type=text]::-moz-placeholder,
+.contact .php-email-form input[type=email]::-moz-placeholder,
+.contact .php-email-form textarea::-moz-placeholder {
+  color: rgba(var(--default-color-rgb), 0.3);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: rgba(var(--default-color-rgb), 0.3);
+}
+
+.contact .php-email-form button[type=submit] {
+  background: var(--primary-color);
+  color: var(--contrast-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: rgba(var(--primary-color-rgb), 0.8);
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ 
+
+}
