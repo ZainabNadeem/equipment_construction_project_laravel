@@ -27,7 +27,7 @@
             </a>
           </div>
         <!-- logo close -->
-      <div class="Zano1" >  
+      <div class="Zano1" onmouseover="applyBlurEffect()" onmouseout="removeBlurEffect()" >  
         <section class="navbar">
           <span class="overlay"></span>
           <div class="menu" id="menu">
@@ -311,11 +311,11 @@
        </div>
        <section id="contact" class="contact">
          <div class="section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2>تواصـــل </h2>
+            <p> شركــة بلواترنجل للمعدات الثقيل</p>
           </div>
           
-      <div  data-aos="fade-up" data-aos-delay="100">
+      <div  data-aos="fade-up"   dir="rtl" data-aos-delay="100">
 
          <div class="row gy-4">
  
@@ -383,7 +383,15 @@
      
     </div>
   </div>
- 
+  <script>
+   function applyBlurEffect() {
+     document.body.classList.add('blur-effect');
+   }
+   
+   function removeBlurEffect() {
+     document.body.classList.remove('blur-effect');
+   }
+ </script>
 <script>
       document.addEventListener('DOMContentLoaded', () => {
           const interBubble = document.querySelector('.interactive');

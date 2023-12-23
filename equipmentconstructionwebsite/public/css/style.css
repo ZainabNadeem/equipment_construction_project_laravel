@@ -610,6 +610,7 @@ color: black; /* لون أيقونة اللغة */
   cursor: pointer;
 }
 
+
 .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(5px);
@@ -702,7 +703,10 @@ text-align: center;
 }
 
 
-      
+ 
+ .blur-effect {
+  filter: blur(4px);
+}     
           
        
       
