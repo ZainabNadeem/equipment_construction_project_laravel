@@ -27,12 +27,10 @@
             </a>
           </div>
         <!-- logo close -->
-   <div class="Zano1" >  
-     <div class="section">
-     
-      <div class="right-item">
+      <div class="Zano1" >  
+        <section class="navbar">
           <span class="overlay"></span>
-          <div class="menu" id="menu" >
+          <div class="menu" id="menu">
              <div class="menu-header">
                 <span class="menu-arrow"><i class="bx bx-chevron-left"></i></span>
                 <span class="menu-title"></span>
@@ -86,7 +84,6 @@
                 </li>
                 <li class="menu-item menu-dropdown">
                    <span class="menu-link">الوظائف <i class="bx bx-chevron-right"></i></span>
-                  
                  <!---  <div class="submenu megamenu megamenu-column-1">
                       <ul class="submenu-list">
                          <li class="submenu-item"><a href="#" class="submenu-link">1
@@ -114,30 +111,39 @@
                    </div>--->
                 </li>
                 <li class="menu-item"><a href="index.html#contact" class="menu-link_last">تواصل معنا </a></li>
-                
              </ul>
           </div>
-      </div>
-      <div class="section">
-         <div class="left-item">
-           <div class="boxdiv">
-             <form action="/saction_page.php">
-               <input type="text" placeholder="البحـــــث عن" name="p">
-               <span class="icon"> <i class="fa fa-search"></i></span>
-             </form>
-           </div>
-         </div>
-         <div class="left-item">
-           <div class="boxdiv">
-             <input type="text" placeholder="العربيــــة" name="lan">
-             <span class="icon">  <i class="fa fa-globe" ></i></span>
-           </div>
-         </div>
-       </div>
-      </div>
+          <div class="section">
+            <div class="left">
+              <div class="boxdiv">
+                <form action="/saction_page.php">
+                  <input type="text" placeholder="البحـــــث عن" name="p">
+                  <span class="icon"> <i class="fa fa-search"></i></span>
+                </form>
+              </div>
+            </div>
+            <div class="left">
+              <div class="boxdiv">
+               <form action="/language_page.php">
+                  <div class="language-dropdown">
+                     <button class="dropdown-button">اختر اللغة</button>
+                     <ul class="dropdown-menu">
+                       <li class="dropdown-item">العربية</li>
+                       <li class="dropdown-item">English</li>
+                       <li class="dropdown-item">Français</li>
+                       <!-- أضف المزيد من العناصر حسب الحاجة -->
+                     </ul>
+                   </div>
+                <span class="icon">  <i class="fa fa-globe" ></i></span>
+               </form>
+              </div>
+            </div>
+          </div>
+         
+       </section>
   </div>
-  <div  class="Zano1">
-    <div class="card-image"> <img class="left  direction: ltr" src="{{ asset('images/Layer_1.png') }}" alt="yy"></div>
+  <div >
+    <div class="card-image" style="border: 1.2px solid rgba(255, 255, 255, 0.281);"> <img class="left  direction: ltr" src="{{ asset('images/Layer_1.png') }}" alt="yy"></div>
   </div>
   <div  class="Zano" >
  
@@ -151,7 +157,7 @@
                                  </div>
                                  <div style="text-align: justify; " class=" right ; size:20%; direction: rtl;">
                                     <!-- Content of the right div -->
-                                 <h1  style="direction: rtl;"> <span style=' font-size: 100%; px;direction: rtl;'> &#9664; من نحن ؟ </span></h1>  
+                                 <h1  style="direction: rtl;"> <span style='font-size:20 px;direction: rtl;'> &#9664; من نحن ؟ </span></h1>  
                                           <p style="direction: rtl;">
                                              شركة بلو ترانجل للتجارة المحدودة عضو في مجموعة شركات عبد الله الرباعي التي تتخصص في عدة مجالات مختلفة
                                              مثل المقاولات والزراعة وأيضًا التجارة العامة تأسست الشركة في عام 2015 بشكل رسمي في الجمهورية اليمنية
@@ -252,7 +258,10 @@
                                           <button class="my-button">تعرف على المزيد</button>
                                        </div>
                                   </div>
- </section>
+                                    
+                           
+
+                  </section>
                
     </div>  
     <br/>
@@ -354,7 +363,6 @@
        </div>
    </div>
  </div>
-
 </div>
   <div class="gradient-bg">
     <svg xmlns="http://www.w3.org/2000/svg">
@@ -375,7 +383,7 @@
      
     </div>
   </div>
- <!---
+ 
 <script>
       document.addEventListener('DOMContentLoaded', () => {
           const interBubble = document.querySelector('.interactive');
@@ -399,8 +407,9 @@
           move();
       });  
 </script>
---->
+
      <link rel="javescrupt" href="{{ asset('js/wow.min.js') }}">
-   
+     <script src="assets/vendor/php-email-form/validate.js"></script>
+     <script src="assets/vendor/aos/aos.js"></script>
   </body>
 </html>
