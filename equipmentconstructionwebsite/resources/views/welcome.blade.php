@@ -37,7 +37,7 @@
              </div>
              <ul class="menu-inner">
                 <li class="menu-item"><a href="#" class="menu-link">الرئسية</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">من نحن</a></li>
+                <li class="menu-item"><a href="{{ route('about-us') }}"  class="menu-link">من نحن</a></li>
                 <li class="menu-item menu-dropdown">
                    <span class="menu-link">الوكالات<i class="bx bx-chevron-right"></i></span>
                    <div class="submenu megamenu megamenu-column-4">
