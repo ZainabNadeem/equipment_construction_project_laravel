@@ -10,5 +10,6 @@ class AboutUsController extends Controller
     {
         // You can pass any necessary data to the view here
         return view('about_us');
+       
     }
 }

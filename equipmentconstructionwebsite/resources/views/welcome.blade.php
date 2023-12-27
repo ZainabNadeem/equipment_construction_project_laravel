@@ -59,58 +59,34 @@
                       <div class="submenu-inner"> 
                          <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                            <span class="submenu-title">Product Name</span>
+                            <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
                          <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_174_AP-5_S_d6c5327211 (1).png') }}" alt="yy">
-                            <span class="submenu-title">Product Name</span>
+                            <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
                          <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                            <span class="submenu-title">Product Name</span>
+                            <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
                          <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                            <span class="submenu-title">Product Name</span>
+                            <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                    </div>
                 </li>
                 <li class="menu-item menu-dropdown">
                    <span class="menu-link">الوظائف <i class="bx bx-chevron-right"></i></span>
-                 <!---  <div class="submenu megamenu megamenu-column-1">
-                      <ul class="submenu-list">
-                         <li class="submenu-item"><a href="#" class="submenu-link">1
-             <a href="#" class="submenu-link">
-                            <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image_bronds" alt="Product">
-                            <span class="submenu-title">2</span>
-                         </a>
-             </a></li>
-                         <li class="submenu-item"><a href="#" class="submenu-link">3
-             <a href="#" class="submenu-link">
-                            <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image_bronds" alt="Product">
-                            <span class="submenu-title">3 </span>
-                         </a></a></li>
-                         <li class="submenu-item"><a href="#" class="submenu-link">4
-             <a href="#" class="submenu-link">
-                            <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image_bronds" alt="Product">
-                            <span class="submenu-title">5</span>
-                         </a></a></li>
-                         <li class="submenu-item"><a href="#" class="submenu-link">6
-             <a href="#" class="submenu-link">
-                            <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image_bronds" alt="Product">
-                            <span class="submenu-title">7</span>
-                         </a></a></li>
-                      </ul>
-                   </div>--->
+         
                 </li>
-                <li class="menu-item"><a href="index.html#contact" class="menu-link_last">تواصل معنا </a></li>
+                <li class="menu-item"><a href="{{  route('contact.submit') }}" class="menu-link_last">تواصل معنا </a></li>
              </ul>
           </div>
           <div class="section">
@@ -299,6 +275,18 @@
           <a href="#" class="more-link"> تعرف على المزيد</a>
         </div>
       </div>
+      @section('content')
+    <h1>Contact Us</h1>
+    <form action="{{ route('contact.submit') }}" method="POST">
+        @csrf
+        <!-- Form fields (name, email, message, etc.) -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <!-- Other form fields -->
+
+        <button type="submit">Submit</button>
+    </form>
+    @endsection
     </div>
     <div class="Zano">
       <div class="title-line">

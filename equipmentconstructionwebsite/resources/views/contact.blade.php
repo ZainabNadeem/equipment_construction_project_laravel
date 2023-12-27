@@ -1,34 +1,20 @@
-<?php
+<!Doctype html>
+<html>
+<header></header>
+<body>
+@extends('layouts.app') <!-- If you have a layout file -->
 
-  $receiving_email_address = 'contact@example.com';
+@section('content')
+    <h1>Contact Us</h1>
+    <form action="{{ route('contact.submit') }}" method="POST">
+        @csrf
+        <!-- Form fields (name, email, message, etc.) -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <!-- Other form fields -->
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
-?>
+        <button type="submit">Submit</button>
+    </form>
+@endsection
+</body>
+</html>

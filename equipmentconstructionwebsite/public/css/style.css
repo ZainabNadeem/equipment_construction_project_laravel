@@ -593,8 +593,9 @@ color: black; /* لون أيقونة اللغة */
   font-size: 12px; /* تعريف حجم الخط */
   font-weight: 90;
   right: 0;
-  backdrop-filter: blur(90px);
-  min-width: 160px;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  min-width: 155px;
  
   padding: 0;
   margin: 0;
@@ -603,7 +604,7 @@ color: black; /* لون أيقونة اللغة */
 }
 
 .dropdown-item {
- 
+  backdrop-filter: blur(8px);
   text-decoration: none;
   display: block;
   color: #fbfbfb;
