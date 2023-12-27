@@ -32,7 +32,7 @@
                 <span class="menu-title"></span>
              </div>
              <ul class="menu-inner">
-                <li class="menu-item"><a  href="{{ route('welcome') }}"  class="menu-link">الرئسية</a></li>
+                <li class="menu-item"><a  href="{{ route('welcome') }}"  class="menu-link" style=" margin-right: 10px;">الرئسية</a></li>
                 <li class="menu-item"><a href="{{ route('about-us') }}"  class="menu-link">من نحن</a></li>
                 <li class="menu-item menu-dropdown">
                    <span class="menu-link">الوكالات<i class="bx bx-chevron-right"></i></span>
