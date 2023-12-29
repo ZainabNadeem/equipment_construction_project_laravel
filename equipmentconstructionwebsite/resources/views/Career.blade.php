@@ -39,18 +39,17 @@
                 <li class="menu-item"><a href="{{ route('welcome') }}"  class="menu-link"style=" margin-right: 15px;">الرئسية</a></li>
                 <li class="menu-item"><a href="{{ route('about-us') }}"  class="menu-link">من نحن</a></li>
                 <li class="menu-item menu-dropdown">
-
-                  <span><a href=" {{route('Brands')}}" class="menu-link"> الوكالات</a><i class="bx bx-chevron-right"></i></span>
+                   <a class="menu-link" href="{{ route('Brands') }}" >الوكالات<i class="bx bx-chevron-right"></i></a>
                    <div class="submenu megamenu megamenu-column-4">
-                   
-                     <a href="{{route('Develon')}}"  class="submenu-link"> <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy"></a>
-                     <a href="{{route('Bobcat')}}"  class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
-                     <a href="{{route('Bomag')}}"  class="submenu-link"> <img src="{{ asset('images/Bomag.svg') }}" alt="yy"></a>
-                     <a href="{{route('Kubota')}}"  class="submenu-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a>
-                     <a href="{{route('Copaz')}}" class="submenu-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a>
-                     <a href="{{route('KCP')}}"  class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/Bomag.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a>
                     <!--- <a href="#" class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
-                      ---><div class="submenu-inner">  
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
+                      ---><div class="submenu-inner">
+                         
                       </div>
                    </div>
                 </li>
@@ -58,25 +57,25 @@
                    <span class="menu-link">المعرض<i class="bx bx-chevron-right"></i></span>
                    <div class="submenu megamenu megamenu-column-4">
                       <div class="submenu-inner"> 
-                         <a href="{{route('Develon')}}" class="submenu-link">
+                         <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
                             <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
-                         <a href="{{route('Bobcat')}}" class="submenu-link">
+                         <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_174_AP-5_S_d6c5327211 (1).png') }}" alt="yy">
                             <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
-                         <a href="{{route('Bomag')}}" class="submenu-link">
+                         <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
                             <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
-                         <a href="{{route('Kubota')}}" class="submenu-link">
+                         <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
                             <span class="submenu-title">أسم المنتج</span>
                          </a>
@@ -118,36 +117,38 @@
           </div>
          
        </section>
+
   </div>
   <div >
     <div class="card-image" style="border: 1.2px solid rgba(255, 255, 255, 0.281);"> <img class="left  direction: ltr" src="{{ asset('images/Layer_1.png') }}" alt="yy"></div>
   </div>
   <div  class="Zano" >
  
-               <div > 
+               <div  dir="rtl"> 
                
-                        <div style="display: flex; justify-content: space-between; font-family: 'Cairo';">
-                                 <div  class="left ;size:20%;"style="display: flex; justify-content: center; align-items: center;">
-                                 <!-- Content of the left div -->
-                                 <h1>           &nbsp;</h1>
-                                 <img src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
-                                 </div>
-                                 <div style="text-align: justify; " class=" right ; size:20%; direction: rtl;">
-                                    <!-- Content of the right div -->
-                                 <h1  style="direction: rtl;"> <span style='font-size:20 px;direction: rtl;'> &#9664; من نحن ؟ </span></h1>  
-                                          <p style="direction: rtl;">
-                                             شركة بلو ترانجل للتجارة المحدودة عضو في مجموعة شركات عبد الله الرباعي التي تتخصص في عدة مجالات مختلفة
-                                             مثل المقاولات والزراعة وأيضًا التجارة العامة تأسست الشركة في عام 2015 بشكل رسمي في الجمهورية اليمنية
-                                             وتمكنت من بناء خبرة قوية وجيدة خلال السنوات منذ تأسيس شركة بلوتراتجل للتجارة المحدودة تخصصت الشركة في
-                                             معدات البناء وآلات الحفر وأيضًا في مجال الطاقة، المعدات الزراعية معدات الرفع وأيضًا معدات واللات خاصة
-                                             وقد أنشأت الشركة شبكة قوية جدًا وموثوق بها داخل وخارج اليمن مع العملاء والموردين قامت الشركة بتوسيع محفظة
-                                             منتجاتها لتصبح موزعًا حصريًا لأكبر العلامات التجارية مثل شركة ديفلون الكورية (معدات دوسان الثقيلة سابقًا)
-                                             ، شركة بوبكات التشيكية معدات البناء والحفر الخفيفة والمتوسطة) شركة بوماج الألمانية (معدات الأسفلت الثقيلة
-                                             والخفيفة ، شركة فارم ترك من اسكرت كابوتا الهندية (حراثات زراعية خفيفة ومتوسطة شركة كوباز الكورية (معدات
-                                             صيانة الطرقات وغيرها من العلامات التجارية الرائدة في المجال.
-                                          </p>
-                                 </div>
-                        </div>
+                <h1>تطبيق اللوظايف</h1>
+
+                <!-- Laravel Blade Form -->
+                <form method="POST" action="{{ route('career.submit') }}">
+                    @csrf
+            
+                    <label for="full_name">الاسم كامل:</label>
+                    <input type="text" id="full_name" name="full_name" required><br><br>
+            
+                    <label for="email">الايميل:</label>
+                    <input type="email" id="email" name="أيميل" required><br><br>
+            
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="text" id="phone" name="phone" required><br><br>
+            
+                    <label for="resume">تحميل ال CV:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+            
+                    <label for="cover_letter">رسالة التوظيف:</label><br>
+                    <textarea id="cover_letter" name="cover_letter" rows="4" cols="50" required></textarea><br><br>
+            
+                    <input type="submit" value="Submit">
+                </form>
                
                </div>
  

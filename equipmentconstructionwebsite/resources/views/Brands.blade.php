@@ -36,21 +36,20 @@
                 <span class="menu-title"></span>
              </div>
              <ul class="menu-inner">
-                <li class="menu-item"><a href="{{ route('welcome') }}"  class="menu-link"style=" margin-right: 15px;">الرئسية</a></li>
+                <li class="menu-item"><a href="#" class="menu-link"style=" margin-right: 15px;">الرئسية</a></li>
                 <li class="menu-item"><a href="{{ route('about-us') }}"  class="menu-link">من نحن</a></li>
                 <li class="menu-item menu-dropdown">
-
-                  <span><a href=" {{route('Brands')}}" class="menu-link"> الوكالات</a><i class="bx bx-chevron-right"></i></span>
+                   <a class="menu-link"href="{{route('Brands')}}">الوكالات<i class="bx bx-chevron-right"></i></a>
                    <div class="submenu megamenu megamenu-column-4">
-                   
-                     <a href="{{route('Develon')}}"  class="submenu-link"> <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy"></a>
-                     <a href="{{route('Bobcat')}}"  class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
-                     <a href="{{route('Bomag')}}"  class="submenu-link"> <img src="{{ asset('images/Bomag.svg') }}" alt="yy"></a>
-                     <a href="{{route('Kubota')}}"  class="submenu-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a>
-                     <a href="{{route('Copaz')}}" class="submenu-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a>
-                     <a href="{{route('KCP')}}"  class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/Bomag.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a>
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a>
                     <!--- <a href="#" class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
-                      ---><div class="submenu-inner">  
+                     <a href="#" class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
+                      ---><div class="submenu-inner">
+                         
                       </div>
                    </div>
                 </li>
@@ -58,25 +57,25 @@
                    <span class="menu-link">المعرض<i class="bx bx-chevron-right"></i></span>
                    <div class="submenu megamenu megamenu-column-4">
                       <div class="submenu-inner"> 
-                         <a href="{{route('Develon')}}" class="submenu-link">
+                         <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
                             <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
-                         <a href="{{route('Bobcat')}}" class="submenu-link">
+                         <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_174_AP-5_S_d6c5327211 (1).png') }}" alt="yy">
                             <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
-                         <a href="{{route('Bomag')}}" class="submenu-link">
+                         <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
                             <span class="submenu-title">أسم المنتج</span>
                          </a>
                       </div>
                       <div class="submenu-inner">
-                         <a href="{{route('Kubota')}}" class="submenu-link">
+                         <a href="#" class="submenu-link">
                            <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
                             <span class="submenu-title">أسم المنتج</span>
                          </a>
