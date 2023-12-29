@@ -348,6 +348,39 @@
        </section>
   <div>
 
+    <!-- جزء الفوتر -->
+    <footer>
+      <div class="zano">
+          <div class="footer-section">
+              <h4>اتصل بنا</h4>
+              <p>123 شارع، المدينة</p>
+              <p>البريد الإلكتروني: contact@example.com</p>
+              <p>الهاتف: +123456789</p>
+          </div>
+          <div class="Right-item">
+              <h4>الاشتراك</h4>
+              <form action="#" method="post">
+                  <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+                  <button type="submit">الاشتراك</button>
+              </form>
+          </div>
+          <div class="left-item" >
+              <h4>روابط مهمة</h4>
+              <ul>
+                  <li><a href="#">شروط الخدمة</a></li>
+                  <li><a href="#">سياسة الخصوصية</a></li>
+                  <li><a href="#">الأسئلة الشائعة</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <!-- الشعار -->
+              <img src="{{ asset('images/BLUE_T.svg') }}" alt="شعار الشركة" class="footer-logo">
+          </div>
+      </div>
+  </footer>
+<!-- Include Bootstrap JS or any other necessary scripts -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
        </div>
    </div>
