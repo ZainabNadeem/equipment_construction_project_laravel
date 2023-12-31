@@ -348,6 +348,8 @@
        </section>
   <div>
 
+
+{{-- 
     <!-- جزء الفوتر -->
     <footer>
       <div class="zano">
@@ -379,13 +381,65 @@
       </div>
   </footer>
 <!-- Include Bootstrap JS or any other necessary scripts -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> --}}
 
 
        </div>
    </div>
+ 
+  
+   <footer class="Zano" dir="rtl">
+    
+    <div class="Zano">
+     
+      <div class="row">
+        <div class="footer-col">
+          <h4>الروابــط المهمة</h4>
+          <ul>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">الوكالات</a></li>
+            <li><a href="#">أخر الاخبار</a></li>
+            <li><a href="#">الوظايف</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>الوكالات</h4>
+          <ul>
+            <li><a href="#">Develon</a></li>
+            <li><a href="#">Bobcat</a></li>
+            <li><a href="#">Bomag</a></li>
+            <li><a href="#">Kubata</a></li>
+            <li><a href="#">Copaz</a></li>
+            <li><a href="#">KCP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <a href="#">
+            <img class="right" src="{{ asset('images/LOGO.svg') }}" alt="yy">
+        </a>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <ul>
+            <li><a href="#">Develon</a></li>
+            <li><a href="#">Bobcat</a></li>
+            <li><a href="#">Bomag</a></li> 
+          </ul>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
  </div>
+ 
 </div>
+
+
   <div class="gradient-bg">
     <svg xmlns="http://www.w3.org/2000/svg">
       <defs>
