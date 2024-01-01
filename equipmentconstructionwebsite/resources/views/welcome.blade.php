@@ -275,7 +275,9 @@
           </p>
           <a href="#" class="more-link"> تعرف على المزيد</a>
         </div>
+        
       </div>
+      
       @section('content')
     <h1>Contact Us</h1>
     <form action="{{ route('contact.submit') }}" method="POST">
@@ -390,8 +392,12 @@
   
    <footer class="Zano" dir="rtl">
     
-    <div class="Zano">
-     
+    
+      <div class="footer-col">
+      <a href="#">
+        <img class="right" src="{{ asset('images/LOGO2.svg') }}" alt="yy">
+      </a>
+    </div>
       <div class="row">
         <div class="footer-col">
           <h4>الروابــط المهمة</h4>
@@ -413,27 +419,41 @@
             <li><a href="#">KCP</a></li>
           </ul>
         </div>
+      
+       
         <div class="footer-col">
-          <a href="#">
-            <img class="right" src="{{ asset('images/LOGO.svg') }}" alt="yy">
-        </a>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
+          <h4>تواصلو معنا </h4>
           <ul>
-            <li><a href="#">Develon</a></li>
-            <li><a href="#">Bobcat</a></li>
-            <li><a href="#">Bomag</a></li> 
-          </ul>
+            <li><a href="#">
+            اوقات الدوام :
+            <br> 
+            من السبت الى الاربعاء الساعة 8:00AM الى الساعة 1:00PM
+            <br> 
+            يوم الخميس من الساعة 8:00AM الى 1:00PM  
+            </a></li>
+            <li><a href="#">التلفونات</a></li>
+            <li><a href="#">الموقع</a></li> 
+          
+            <li>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
+        </li>
+        </ul>
+        </div>
+        <div class="footer-col">
+          <h4>الاشتراك</h4>
+          <form action="#" method="post">
+              <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+              <button  type="submit">الاشتراك</button>
+          </form>
+      
         </div>
       </div>
-    </div>
+  
   </footer>
  </div>
  

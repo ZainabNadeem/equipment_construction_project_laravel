@@ -347,7 +347,61 @@
        </section>
   <div>
 
+    <script src="https://kit.fontawesome.com/95a02bd20d.js"></script> 
 
+  <div class="container1">
+     <div class="card1">
+       <div class="face face1">
+         <div class="content">
+         <i class="fa fa-cogs"></i>
+           <h3>Maintenance</h3>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+           <a href="#" type="button">Read More</a>
+         </div>
+       </div>
+    </div>
+    
+    <div class="card1">
+       <div class="face face1">
+         <div class="content">
+      <i class="fa fa-wrench"></i>               <h3>Request a Quote</h3>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+           <a href="#" type="button">Read More</a>
+         </div>
+       </div>
+    </div>
+    
+    
+    <div class="card1">
+       <div class="face face1">
+         <div class="content">
+           <i class="fa fa-truck"></i>
+            <h3>Equipment</h3>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+           <a href="#" type="button">Read More</a>
+         </div>
+       </div>
+    </div>
+    
+    
+    
+    
+    
+    
+  </div>
+  
        </div>
    </div>
  </div>

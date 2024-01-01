@@ -99,14 +99,15 @@ ul{
 	content: '';
 	position: absolute;
 	Right:0;
+  left:0;
 	bottom: -8px;
 	background-color: #00badc;
 	height: 1px;
 	box-sizing: border-box;
-	width: 35px;
+	width: 50px;
 }
 .footer-col ul li:not(:last-child){
-	margin-bottom: 2px;
+	margin-bottom: 1px;
 }
 .footer-col img{
   width: 100%;
@@ -129,12 +130,12 @@ ul{
 }
 .footer-col .social-links a{
 	display: inline-block;
-	height: 30px;
-	width: 30px;
+	height: 25px;
+	width: 25px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 2px 2px 0;
 	text-align: center;
-	line-height: 30px;
+	line-height: 25px;
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
@@ -164,6 +165,20 @@ width: 100%;
 /*  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity)));يضيف ظل للعنصر بناءً على الخصائص المحددة.*/
 box-sizing: border-box; /*يحدد نموذج المربع للعنصر ليشمل الحشو والحاشية ضمن الأبعاد المحددة. */
 }
+
+@media (max-width: 768px) {
+  .container .Zano {
+    width: 80%; /* تعديل العرض للأجهزة اللوحية */
+  }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  .container .Zano {
+    width: 90%; /* تعديل العرض للهواتف الذكية */
+  }
+}
+
 .container .Zano1 {
 width: 100%;
 
@@ -278,7 +293,7 @@ margin-bottom: 0;
 }
 .gradient-bg {
 width: 100vw;
-height: 500vh;
+height: 550vh;
 position: relative;
 overflow: hidden;
 background-color:  rgb(1, 11, 41);
@@ -312,6 +327,9 @@ animation: moveVertical 5s ease infinite;
 opacity: 2;
 --blur: 10px;
 }
+
+
+
 
 .gradient-bg .g2 {
 position: absolute;
@@ -377,6 +395,19 @@ Right: -50%;
 opacity: 1.7;
 }
 
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .gradient-bg {
+    height: 700vh; /* Adjust the height for tablets */
+  }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  .gradient-bg {
+    height: 2000vh; /* Adjust the height for mobile phones */
+  }
+}
 /* تعريف أنمط لعنصر يحمل الهوية #team-members */
 #team-members {
 display: flex; /* عرض المحتوى بنظام Flex */
@@ -1620,6 +1651,125 @@ background: rgba(var(--primary-color-rgb), 0.8);
   transform: rotate(360deg);
 }
 }
-    
+ 
+
+.container1{
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  
+}
+
+.container1 .card1{
+  position: relative;
+}
+
+.container1 .card1 .face{
+  width:300px;
+  height: 200px;
+  transition:.4s;
+  
+}
+
+.container1 .card1 .face.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container1 .card1:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+   
+}
+
+
+.container1 .card1 .face.face1 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+
+}
+
+.container1 .card1:hover .face.face1 .content{
+  opacity: 1;
+ 
+}
+
+.container1 .card1 .face.face1 .content i{
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+   
+}
+
+.container .card .face.face1 .content h3{
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  
+
+}
+
+.container1 .card1 .face.face1 .content a{
+   transition: .5s;
+}
+
+.container1 .card1 .face.face2{
+   position: relative;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+
+.container1 .card1:hover .face.face2{
+    transform: translateY(0);
+
+
+}
+
+.container1 .card1 .face.face2 .content p, a{
+  font-size: 10pt;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+}
+
+.container1 .card1 .face.face2 .content a{
+  text-decoration:none;
+  color: blue;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.container1 .card1 .face.face2 .content a:hover{
+  background: #00badc;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
 
 }
