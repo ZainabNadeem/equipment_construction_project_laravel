@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="javescrupt" href="{{ asset('js/Search_event_lag.js') }}">
+    
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
    
   </head>
   <body>
