@@ -130,14 +130,6 @@
     </div>
   </div>
 
-  <div id="team-members">
-    <!-- Your content for the About Us page goes here -->
-    <h1>About Us</h1>
-    <p>Welcome to our amazing team!</p>
-    <!-- Add more content as needed -->
-  </div>
-
-  <!-- Additional HTML or scripts can go here -->
 
 </body>
 </html>

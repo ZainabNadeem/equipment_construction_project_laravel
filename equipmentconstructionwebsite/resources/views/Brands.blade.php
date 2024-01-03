@@ -133,7 +133,7 @@
                                  </div>
                                  <div style="text-align: justify; " class=" right ; size:20%; direction: rtl;">
                                     <!-- Content of the right div -->
-                                 <h1  style="direction: rtl;"> <span style='font-size:20 px;direction: rtl;'> &#9664; من نحن ؟ </span></h1>  
+                                 <h1  style="direction: rtl;"> <span style='font-size:20 px;direction: rtl;'> &#9664;الوكــالات بلو ترانجل</span></h1>  
                                           <p style="direction: rtl;">
                                              شركة بلو ترانجل للتجارة المحدودة عضو في مجموعة شركات عبد الله الرباعي التي تتخصص في عدة مجالات مختلفة
                                              مثل المقاولات والزراعة وأيضًا التجارة العامة تأسست الشركة في عام 2015 بشكل رسمي في الجمهورية اليمنية
@@ -161,247 +161,201 @@
     </div>
 
    </div>
-   <div class="Zano">
- 
-     <section dir="rtl">  
-                     <div  class="card-top">
-                                    <div class="card" >
-                                       <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy">
-                                       <p>
-                                          شركة اتش دي هيونداي انفراكور (شركة دوسان سابقا) هي شركة عالمية رائدة في مجال هندسة وتصنيع وتسويق معدات البناء المدمجة والثقيلة تم تصميم معدات ديفلون القوية للمساعدة في التغلب على أكبر التحديات التي تواجهك من خلال تقديم مكونات المساعد وتقنيات حديثة
-                                       </p>
-                                       <br/> <br/> <br/> <br/>
-                                      
-                                       <button class="my-button">تعرف على المزيد</button>
-                                    </div>
-                                    <hr class="my-vertical-line">   
-                                    <div class="card" >
-                                       <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy">
-                                       <p > 
-                                          تقود شركة بوبكات الصناعة في تصميم وتصنيع وتسويق وتوزيع المعدات المدمجة للبناء والتأجير والمناظر الطبيعية والزراعة وصيانة الأراضي والطرقات والمرافق والصناعة والتعدين نسعى جاهدين لتمكين عملائنا من القيام وظائفهم بشكل أكثر كفاءة وفعالية
+   <div class="container3">
+        
+            
 
-                                       </p>
-                                       <br/> <br/> <br/> <br/>
-                                       
-                                       <button class="my-button">تعرف على المزيد</button>
-                                    </div>
-                                    <hr class="my-vertical-line">
-                                    <div class="card">
-                                       <img src="{{ asset('images/Babcat_Mach_hand.svg') }}" alt="yy">
-                                       <p>والأكثر صعوبة بفضل التصميم الفائق وأحدث التقنيات
-                                          تطلب العمل الشاق أكثر المعدات موثوقية. توفر دوسان للطاقة المحمولة المعدات المتينة والمثبتة التي تحتاجها للتعامل بثقة مع المهام الأكبر والأكثر صعوبة بفضل التصميم الفائق وأحدث التقنيات
+    <div class="parent card2">
+        <div class="card ">
+            <div class="content-box">
+                <h1 class="card-title">HD-Develon</h1>
+                <p class="card-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Facere sequi illo nam repudiandae tempore quaerat veritatis 
+                    doloremque omnis molestias id.
+                </p>
+                <span class="see-more">See More</span>
+            </div>
+            <div class="date-box">
+              <a href="#" class="submenu-link"> <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy"></a>
+            </div>
+        </div>
+    </div>
 
-                                       </p>
-                                       <br/> <br/> <br/> <br/>
-                                       
-                                       <button class="my-button">تعرف على المزيد</button>
-                                    </div>
+    <div class="parent card3">
+        <div class="card">
+            <div class="content-box">
+                <h1 class="card-title">Bobcat</h1>
+                <p class="card-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+                </p>
+                <span class="see-more">See More</span>
+            </div>
+            <div class="date-box">
+              <a href="#" class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
+            </div>
+        </div>
+    </div>
 
-                                 
+    <div class="parent card4">
+        <div class="card">
+            <div class="content-box">
+                <h1 class="card-title">Bomag</h1>
+                <p class="card-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+                </p>
+                <span class="see-more">See More</span>
+            </div>
+            <div class="date-box">
+              <a href="#" class="submenu-link"> <img src="{{ asset('images/Bomag.svg') }}" alt="yy"></a>
+            </div>
+        </div>
+        </div>
+
+        <div class="parent card5">
+            <div class="card">
+                <div class="content-box">
+                    <h1 class="card-title">E-FARMTRAC</h1>
+                    <p class="card-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+                    </p>
+                    <span class="see-more">See More</span>
+                </div>
+                <div class="date-box">
+                  <a href="#" class="submenu-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a>
+                </div>
+            </div>
+            </div>
+
+            <div class="parent ccard-blue">
+                <div class="card">
+                    <div class="content-box">
+                        <h1 class="card-title">copaz</h1>
+                        <p class="card-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+                        </p>
+                        <span class="see-more">See More</span>
+                    </div>
+                    <div class="date-box">
+                      <a href="#" class="submenu-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a>
+                    </div>
+                </div>
+                </div>
+                <div class="parent card-yellow">
+                    <div class="card">
+                        <div class="content-box">
+                            <h1 class="card-title">Card Title</h1>
+                            <p class="card-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+                            </p>
+                            <span class="see-more">See More</span>
+                        </div>
+                        <div class="date-box">
+                            <span class="month">JUNE</span>
+                            <span class="date">29</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="parent ccard-blue">
+                      <div class="card">
+                          <div class="content-box">
+                              <h1 class="card-title">Card Title</h1>
+                              <p class="card-content">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+                              </p>
+                              <span class="see-more">See More</span>
+                          </div>
+                          <div class="date-box">
+                              <span class="month">JUNE</span>
+                              <span class="date">29</span>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="parent card-yellow">
+                          <div class="card">
+                              <div class="content-box">
+                                  <h1 class="card-title">Card Title</h1>
+                                  <p class="card-content">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+                                  </p>
+                                  <span class="see-more">See More</span>
                               </div>
-                                    <br/> <br/> 
-                                    
-                              <div class="card-top">
-                                       <div class="card" >
-                                          <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy">
-                                          <p>
-                                             شركة اتش دي هيونداي انفراكور (شركة دوسان سابقا) هي شركة عالمية رائدة في مجال هندسة وتصنيع وتسويق معدات البناء المدمجة والثقيلة تم تصميم معدات ديفلون القوية للمساعدة في التغلب على أكبر التحديات التي تواجهك من خلال تقديم مكونات المساعد وتقنيات حديثة
-                                          </p>
-                                          <br/> <br/> <br/> <br/>
-                                         
-                                          <button class="my-button">تعرف على المزيد</button>
-                                       </div>
-                                       <hr class="my-vertical-line">   
-                                       <div class="card" >
-                                          <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy">
-                                          <p > 
-                                             تقود شركة بوبكات الصناعة في تصميم وتصنيع وتسويق وتوزيع المعدات المدمجة للبناء والتأجير والمناظر الطبيعية والزراعة وصيانة الأراضي والطرقات والمرافق والصناعة والتعدين نسعى جاهدين لتمكين عملائنا من القيام وظائفهم بشكل أكثر كفاءة وفعالية
-                  
-                                          </p>
-                                         
-                                          <br/> <br/> <br/> <br/>
-                                          <button class="my-button">تعرف على المزيد</button>
-                                       </div>
-                                       <hr class="my-vertical-line">
-                                       <div class="card">
-                                          <img src="{{ asset('images/Babcat_Mach_hand.svg') }}" alt="yy">
-                                          <p>والأكثر صعوبة بفضل التصميم الفائق وأحدث التقنيات
-                                             تطلب العمل الشاق أكثر المعدات موثوقية. توفر دوسان للطاقة المحمولة المعدات المتينة والمثبتة التي تحتاجها للتعامل بثقة مع المهام الأكبر والأكثر صعوبة بفضل التصميم الفائق وأحدث التقنيات
-                  
-                                          </p>
-                                          <br/> <br/> <br/> <br/>
-                                         
-                                          <button class="my-button">تعرف على المزيد</button>
-                                       </div>
-                                  </div>
-                                    
-                           
-
-                  </section>
-               
+                              <div class="date-box">
+                                  <span class="month">JUNE</span>
+                                  <span class="date">29</span>
+                              </div>
+                          </div>
+                          </div>
+                      
+  <div class="container1">
+    <div class="card1">
+      <div class="face face1">
+        <div class="content">
+        <i class="fa fa-cogs"></i>
+          <h3>Maintenance</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+          <a href="#" type="button">Read More</a>
+        </div>
+      </div>
+   </div>
+   
+   <div class="card1">
+      <div class="face face1">
+        <div class="content">
+     <i class="fa fa-wrench"></i>               <h3>Request a Quote</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+          <a href="#" type="button">Read More</a>
+        </div>
+      </div>
+   </div>
+   
+   
+   <div class="card1">
+      <div class="face face1">
+        <div class="content">
+          <i class="fa fa-truck"></i>
+           <h3>Equipment</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+          <a href="#" type="button">Read More</a>
+        </div>
+      </div>
+   </div>
+   <div class="card1">
+    <div class="face face1">
+      <div class="content">
+        <i class="fa fa-truck"></i>
+         <h3>Equipment</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+        <a href="#" type="button">Read More</a>
+      </div>
+    </div>
     </div>  
+ </div>
+ 
+
+</div>
     <br/>
 <div class="Zano" >
-   <div class="title-line">
-      <h1 class="title right"> 
-         &#9664; أخر الأخبار
-      </h1>
-      <div class="line right">  </div>
-      
-    </div>
+   
 
-   </div>
-   <div class="event-container" class="spacer" dir="rtl">
-      <div class="event">
-        <img src="{{ asset('images/manager.jpg') }}" alt="صورة الحدث">
-        <div class="event-details">
-          <h3>رافعات دوسان</h3>
-          <p>
-            أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ. يجمع شصى زكر طظف ضعغ سلمن بخت. قدر سمعن صعغ ضفظ عشغ غظف ثمق. كلمن سعفص قرشت ثخذ ضظغ يجمع شصى زكر طظف ضعغ سلمن بخت. قدر سمعن صعغ ضفظ عشغ غظف ثمق
-         </p>
-          <a href="#" class="more-link"> تعرف على المزيد</a>
-        </div>
-      </div>
-      <hr class="my-vertical-line1">
-      <div class="event">
-        <img  src="{{ asset('images/manager.jpg') }}" alt="صورة الحدث">
-        <div class="event-details">
-          <h3>عنوان الحدث</h3>
-          <p>
+    
 
-            أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ. يجمع شصى زكر طظف ضعغ سلمن بخت. قدر سمعن صعغ ضفظ عشغ غظف ثمق. كلمن سعفص قرشت ثخذ ضظغ يجمع شصى زكر طظف ضعغ سلمن بخت. قدر سمعن صعغ ضفظ عشغ غظف ثمق
-
-          </p>
-          <a href="#" class="more-link"> تعرف على المزيد</a>
-        </div>
-      </div>
-      @section('content')
-    <h1>Contact Us</h1>
-    <form action="{{ route('contact.submit') }}" method="POST">
-        @csrf
-        <!-- Form fields (name, email, message, etc.) -->
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
-        <!-- Other form fields -->
-
-        <button type="submit">Submit</button>
-    </form>
-    @endsection
-    </div>
-    <div class="Zano">
-      <div class="title-line">
-         <h1 class="title right"> 
-            &#9664; تواصل معنــا
-         </h1>
-         <div class="line right"> 
-         </div>
-         
-       </div>
-       <section id="contact" class="contact">
-         <div class="section-title" data-aos="fade-up">
-            <h2>تواصـــل </h2>
-            <p> شركــة بلواترنجل للمعدات الثقيل</p>
-          </div>
-          
-      <div  data-aos="fade-up"   dir="rtl" data-aos-delay="100">
-
-         <div class="row gy-4">
- 
-          
-           <div class="right-item">
-             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-               <div class="row gy-4">
- 
-                 <div class="col-md-6">
-                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                 </div>
- 
-                 <div class="col-md-6 ">
-                   <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                 </div>
- 
-                 <div class="col-md-12">
-                   <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                 </div>
- 
-                 <div class="col-md-12">
-                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                 </div>
- 
-                 <div class="col-md-12 text-center">
-                   <div class="loading">Loading</div>
-                   <div class="error-message"></div>
-                   <div class="sent-message">Your message has been sent. Thank you!</div>
- 
-                   <button type="submit">Send Message</button>
-                 </div>
- 
-               </div>
-             </form>
-           </div><!-- End Contact Form -->
- 
-         </div>
- 
-       </div>
- 
-       </section>
-  <div>
-
-    <script src="https://kit.fontawesome.com/95a02bd20d.js"></script> 
-
-  <div class="container1">
-     <div class="card1">
-       <div class="face face1">
-         <div class="content">
-         <i class="fa fa-cogs"></i>
-           <h3>Maintenance</h3>
-         </div>
-       </div>
-       <div class="face face2">
-         <div class="content">
-           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-           <a href="#" type="button">Read More</a>
-         </div>
-       </div>
-    </div>
-    
-    <div class="card1">
-       <div class="face face1">
-         <div class="content">
-      <i class="fa fa-wrench"></i>               <h3>Request a Quote</h3>
-         </div>
-       </div>
-       <div class="face face2">
-         <div class="content">
-           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-           <a href="#" type="button">Read More</a>
-         </div>
-       </div>
-    </div>
-    
-    
-    <div class="card1">
-       <div class="face face1">
-         <div class="content">
-           <i class="fa fa-truck"></i>
-            <h3>Equipment</h3>
-         </div>
-       </div>
-       <div class="face face2">
-         <div class="content">
-           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-           <a href="#" type="button">Read More</a>
-         </div>
-       </div>
-    </div>
-    
-    
-    
-    
-    
-    
-  </div>
-  
        </div>
    </div>
  </div>
