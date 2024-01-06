@@ -12,8 +12,6 @@
     <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="javescrupt" href="{{ asset('js/Search_event_lag.js') }}">
     
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
@@ -120,6 +118,21 @@
          
        </section>
   </div>
+
+ <!-- /* <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <video width="100%" controls>
+                <source src="{{ asset('videos/about_blue.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+       يمكنك إضافة شرائح إضافية هنا إذا كنت تريد عرض مزيد من الفيديوهات 
+    </div>
+   إضافة الأزرار التي تتحكم في التنقل بين الشرائح 
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>*/-->
   <div >
     <div class="card-image" style="border: 1.2px solid rgba(255, 255, 255, 0.281);"> <img class="left  direction: ltr" src="{{ asset('images/Layer_1.png') }}" alt="yy"></div>
   </div>
@@ -299,7 +312,7 @@
       </div>
       <div class="face face2">
         <div class="content">
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
           <a href="#" type="button">Read More</a>
         </div>
       </div>
@@ -313,7 +326,7 @@
       </div>
       <div class="face face2">
         <div class="content">
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. . Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
           <a href="#" type="button">Read More</a>
         </div>
       </div>
@@ -329,7 +342,7 @@
       </div>
       <div class="face face2">
         <div class="content">
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+          <p> Lorem ipsum dolor sit amet consectetur  Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
           <a href="#" type="button">Read More</a>
         </div>
       </div>
@@ -337,13 +350,13 @@
    <div class="card1">
     <div class="face face1">
       <div class="content">
-        <i class="fa fa-truck"></i>
-         <h3>Equipment</h3>
+        <i class="fas fa-tools"></i>
+         <h3>Attachments</h3>
       </div>
     </div>
     <div class="face face2">
       <div class="content">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+        <p> Lorem ipsum dolor sit amet consectetur  Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
         <a href="#" type="button">Read More</a>
       </div>
     </div>
@@ -391,27 +404,18 @@
    }
  </script>
 <script>
-      document.addEventListener('DOMContentLoaded', () => {
-          const interBubble = document.querySelector('.interactive');
-          let curX = 0;
-          let curY = 0;
-          let tgX = 0;
-          let tgY = 0;
-      
-          function move() {
-              curX += (tgX - curX) / 20;
-              curY += (tgY - curY) / 20;
-              interBubble.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
-              requestAnimationFrame(move);
-          }
-      
-          window.addEventListener('mousemove', (event) => {
-              tgX = event.clientX;
-              tgY = event.clientY;
-          });
-      
-          move();
-      });  
+    import Swiper from 'swiper';
+
+// تكوين Swiper
+const mySwiper = new Swiper('.swiper-container', {
+    // إعدادات Swiper الإضافية هنا
+    loop: true, // تكرار الشرائح
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 </script>
 
      <link rel="javescrupt" href="{{ asset('js/wow.min.js') }}">

@@ -9,13 +9,14 @@ Primary style
 
 html {
   font-size: 62.5%;
+  font-family: 'Cairo';
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #404042;
-  background-color: #ffffff;
+  font-size: 12px;
+  font-family:'Cairo';
+  backdrop-filter: blur(5px);
+  
 }
 
 a {
@@ -24,13 +25,13 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 60%;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 16px;
   text-align: center;
-  padding: 4em 5%;
+  padding: 2em 1%;
 }
 @media only screen and (min-width: 1170px) {
   h1 {
@@ -78,7 +79,7 @@ Main Components
 .cd-products-comparison-table .filter {
   padding: .6em 1.5em;
   color: #ffffff;
-  background-color: #cccccc;
+  
   border-radius: 3px;
   margin-left: 1em;
   cursor: not-allowed;
@@ -88,7 +89,7 @@ Main Components
 }
 .cd-products-comparison-table .filter.active {
   cursor: pointer;
-  background-color: #9dc997;
+  
 }
 .no-touch .cd-products-comparison-table .filter.active:hover {
   background-color: #a7cea1;
@@ -108,7 +109,7 @@ Main Components
     font-size: 2.4rem;
   }
   .cd-products-comparison-table .reset, .cd-products-comparison-table .filter {
-    font-size: 1.6rem;
+    font-size: 12px;
   }
   .cd-products-comparison-table .filter {
     padding: .6em 2em;
@@ -132,7 +133,7 @@ Main Components
   border-color: #e6e6e6;
   border-top-width: 1px;
   border-bottom-width: 1px;
-  background-color: #fafafa;
+  backdrop-filter: blur(8px);
   opacity: .95;
 }
 .cd-products-table .features::after {
@@ -239,7 +240,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .cd-features-list li {
-    font-size: 1.6rem;
+    font-size: 12px;
   }
   .cd-features-list li.rate {
     padding: 22px 0;
@@ -286,7 +287,7 @@ Main Components
   -moz-transition: height 0.3s;
   transition: height 0.3s;
   cursor: pointer;
-  background: #ffffff;
+  backdrop-filter: blur(15px);
 }
 .cd-products-table .top-info::after {
   /* color gradient below .top-info -  visible when .top-info is fixed */
@@ -336,7 +337,7 @@ Main Components
   /* green circle dot */
   border-radius: 50%;
   border: 1px solid #e6e6e6;
-  background: #ffffff;
+  backdrop-filter: blur(5px);
   -webkit-transition: background-color 0.3s, -webkit-transform 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, -moz-transform 0.3s, border-color 0.3s;
   transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
@@ -357,7 +358,7 @@ Main Components
   }
   .cd-products-table .top-info h3 {
     padding-top: 1.4em;
-    font-size: 1.6rem;
+    font-size: 12px;
   }
   .cd-products-table .top-info .check {
     margin-bottom: 1.5em;
