@@ -25,7 +25,7 @@ a {
 }
 
 img {
-  max-width: 60%;
+  min-width: 40%;
 }
 
 h1 {
@@ -171,7 +171,7 @@ Main Components
 
 .cd-products-columns {
   /* products list wrapper */
-  width: 1200px;
+  width: 120px;
   margin-left: 120px;
 }
 .cd-products-columns::after {
@@ -189,7 +189,7 @@ Main Components
 .cd-products-columns .product {
   position: relative;
   float: left;
-  width: 150px;
+  width: 100px;
   text-align: center;
   -webkit-transition: opacity 0.3s, visibility 0.3s, -webkit-transform 0.3s;
   -moz-transition: opacity 0.3s, visibility 0.3s, -moz-transform 0.3s;
@@ -262,7 +262,7 @@ Main Components
   .cd-products-table .features .top-info {
     text-transform: uppercase;
     line-height: 16px;
-    padding: 25px 20px;
+    padding: 20px 15px;
     letter-spacing: 1px;
   }
 }
@@ -276,8 +276,8 @@ Main Components
 
 .cd-products-table .top-info {
   position: relative;
-  height: 177px;
-  width: 150px;
+  height: 17px;
+  width: 40px;
   text-align: center;
   padding: 1.25em 2.5em;
   border-color: #e6e6e6;
@@ -296,7 +296,7 @@ Main Components
   left: 0;
   top: 100%;
   height: 4px;
-  width: 100%;
+  width: 20%;
   background-color: transparent;
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.06), transparent);
   background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.06), transparent);
@@ -305,9 +305,11 @@ Main Components
 .cd-products-table .top-info h3 {
   padding: 1.25em 0 0.625em;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 12px;
 }
 .cd-products-table .top-info img {
+  width: 80px;
+  direction: center;
   display: block;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -473,11 +475,11 @@ Main Components
   }
   .cd-products-table.top-fixed .top-info img,
   .cd-products-table.top-scrolling .top-info img {
-    -webkit-transform: translateY(-62px) scale(0.4);
-    -moz-transform: translateY(-62px) scale(0.4);
-    -ms-transform: translateY(-62px) scale(0.4);
-    -o-transform: translateY(-62px) scale(0.4);
-    transform: translateY(-62px) scale(0.4);
+    -webkit-transform: translateY(-50px) scale(0.4);
+    -moz-transform: translateY(-50px) scale(0.4);
+    -ms-transform: translateY(-50px) scale(0.4);
+    -o-transform: translateY(-50px) scale(0.4);
+    transform: translateY(-50px) scale(0.4);
   }
 
   .cd-products-table.top-scrolling .top-info {

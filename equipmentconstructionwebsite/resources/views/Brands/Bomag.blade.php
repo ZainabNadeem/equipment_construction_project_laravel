@@ -122,12 +122,12 @@
    
   <div class="Zano" >
     <section class="cd-intro">
-      <h1>Products Comparison Table</h1>
+      <h3>Products Comparison Table</h3>
     </section> <!-- .cd-intro -->
   
     <section class="cd-products-comparison-table">
       <header>
-        <h2>Compare Models</h2>
+        <h4>Compare Models</h4>
   
         <div class="actions">
           <a href="#0" class="reset">Reset</a>
@@ -140,16 +140,16 @@
           <div class="top-info">Models</div>
           <ul class="cd-features-list">
             <li>Price</li>
-            <li>Customer Rating</li>
-            <li>Resolution</li>
-            <li>Screen Type</li>
-            <li>Display Size</li>
-            <li>Refresh Rate</li>
-            <li>Model Year</li>
-            <li>Tuner Technology</li>
-            <li>Ethernet Input</li>
-            <li>USB Input</li>
-            <li>Scart Input</li>
+            <li>Loader bucket capacity</li>
+            <li>Digging depth</li>
+            <li>Engine power</li>
+            <li>Steering type</li>
+            <li>Operating weight</li>
+            <li>Make / Model</li>
+            <li>Compliancy</li>
+            <li>Aspiration</li>
+            <li>Number of cylinders</li>
+            <li>Displacement</li>
           </ul>
         </div> <!-- .features -->
         
@@ -159,7 +159,7 @@
               <div class="top-info">
                 <div class="check"></div>
                 <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                <h3>Sumsung Series 6 J6300</h3>
+                <h3>B730 Backhoe Loader</h3>
               </div> <!-- .top-info -->
   
               <ul class="cd-features-list">
@@ -181,7 +181,7 @@
               <div class="top-info">
                 <div class="check"></div>
                 <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                <h3>Sumsung Series 6 J6300</h3>
+                <h3>B780 Backhoe Loader</h3>
               </div> <!-- .top-info -->
   
               <ul class="cd-features-list">
@@ -203,7 +203,7 @@
               <div class="top-info">
                 <div class="check"></div>
                 <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                <h3>Sumsung Series 6 J6300</h3>
+                <h3>B780 Backhoe Loader</h3>
               </div> <!-- .top-info -->
   
               <ul class="cd-features-list">
@@ -225,7 +225,7 @@
               <div class="top-info">
                 <div class="check"></div>
                 <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                <h3>Sumsung Series 6 J6300</h3>
+                <h4>B780 Backhoe Loader</h4>
               </div> <!-- .top-info -->
   
               <ul class="cd-features-list">
@@ -247,7 +247,7 @@
               <div class="top-info">
                 <div class="check"></div>
                 <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                <h3>Sumsung Series 6 J6300</h3>
+                <h4>B780 Backhoe Loader</h4>
               </div> <!-- .top-info -->
   
               <ul class="cd-features-list">
@@ -269,7 +269,7 @@
               <div class="top-info">
                 <div class="check"></div>
                 <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                <h3>Sumsung Series 6 J6300</h3>
+                <h4>B780 Backhoe Loader</h4>
               </div> <!-- .top-info -->
   
               <ul class="cd-features-list">
@@ -291,7 +291,7 @@
               <div class="top-info">
                 <div class="check"></div>
                 <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                <h3>Sumsung Series 6 J6300</h3>
+                <h4>B780 Backhoe Loader</h4>
               </div> <!-- .top-info -->
   
               <ul class="cd-features-list">
@@ -313,7 +313,7 @@
               <div class="top-info">
                 <div class="check"></div>
                 <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                <h3>Sumsung Series 6 J6300</h3>
+                <h4>B780 Backhoe Loader</h4>
               </div> <!-- .top-info -->
   
               <ul class="cd-features-list">

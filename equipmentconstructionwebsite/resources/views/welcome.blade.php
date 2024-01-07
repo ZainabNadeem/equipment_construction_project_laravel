@@ -136,7 +136,7 @@
                                  </div>
                                  <div style="text-align: justify; " class=" right ; size:20%; direction: rtl;">
                                     <!-- Content of the right div -->
-                                 <h1  style="direction: rtl;"> <span style='font-size:20 px;direction: rtl;'> &#9664; من نحن ؟ </span></h1>  
+                                 <h1  style="direction: rtl; ">  &#9664; من نحن ؟ </h1>  
                                           <p style="direction: rtl;">
                                              شركة بلو ترانجل للتجارة المحدودة عضو في مجموعة شركات عبد الله الرباعي التي تتخصص في عدة مجالات مختلفة
                                              مثل المقاولات والزراعة وأيضًا التجارة العامة تأسست الشركة في عام 2015 بشكل رسمي في الجمهورية اليمنية
@@ -250,9 +250,6 @@
          &#9664; أخر الأخبار
       </h1>
       <div class="line right">  </div>
-      
-    </div>
-
    </div>
    <div class="event-container" class="spacer" dir="rtl">
       <div class="event">
@@ -279,122 +276,83 @@
         </div>
         
       </div>
-      
-      @section('content')
-    <h1>Contact Us</h1>
-    <form action="{{ route('contact.submit') }}" method="POST">
-        @csrf
-        <!-- Form fields (name, email, message, etc.) -->
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
-        <!-- Other form fields -->
-
-        <button type="submit">Submit</button>
-    </form>
-    @endsection
     </div>
-    <div class="Zano">
+</div>
+
+ <div class="Zano">
       <div class="title-line">
          <h1 class="title right"> 
             &#9664; تواصل معنــا
          </h1>
-         <div class="line right"> 
-         </div>
-         
-       </div>
-       <section id="contact" class="contact">
-         <div class="section-title" data-aos="fade-up">
-            <h2>تواصـــل </h2>
-            <p> شركــة بلواترنجل للمعدات الثقيل</p>
-          </div>
-          
-      <div  data-aos="fade-up"   dir="rtl" data-aos-delay="100">
-
-         <div class="row gy-4">
- 
-          
-           <div class="right-item">
-             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-               <div class="row gy-4">
- 
-                 <div class="col-md-6">
-                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                 </div>
- 
-                 <div class="col-md-6 ">
-                   <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                 </div>
- 
-                 <div class="col-md-12">
-                   <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                 </div>
- 
-                 <div class="col-md-12">
-                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                 </div>
- 
-                 <div class="col-md-12 text-center">
-                   <div class="loading">Loading</div>
-                   <div class="error-message"></div>
-                   <div class="sent-message">Your message has been sent. Thank you!</div>
- 
-                   <button type="submit">Send Message</button>
-                 </div>
- 
-               </div>
-             </form>
-           </div><!-- End Contact Form -->
- 
-         </div>
- 
-       </div>
- 
-       </section>
-  <div>
-
-
-{{-- 
-    <!-- جزء الفوتر -->
-    <footer>
-      <div class="zano">
-          <div class="footer-section">
-              <h4>اتصل بنا</h4>
-              <p>123 شارع، المدينة</p>
-              <p>البريد الإلكتروني: contact@example.com</p>
-              <p>الهاتف: +123456789</p>
-          </div>
-          <div class="Right-item">
-              <h4>الاشتراك</h4>
-              <form action="#" method="post">
-                  <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
-                  <button type="submit">الاشتراك</button>
-              </form>
-          </div>
-          <div class="left-item" >
-              <h4>روابط مهمة</h4>
-              <ul>
-                  <li><a href="#">شروط الخدمة</a></li>
-                  <li><a href="#">سياسة الخصوصية</a></li>
-                  <li><a href="#">الأسئلة الشائعة</a></li>
-              </ul>
-          </div>
-          <div class="footer-section">
-              <!-- الشعار -->
-              <img src="{{ asset('images/BLUE_T.svg') }}" alt="شعار الشركة" class="footer-logo">
-          </div>
+         <div class="line right"> </div>
       </div>
-  </footer>
-<!-- Include Bootstrap JS or any other necessary scripts -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> --}}
 
-
-       </div>
-   </div>
+      <div  class="Zano" >
  
-  
+        <div > 
+                 <div style="display: flex; justify-content: space-between; font-family: 'Cairo';">
+                          <div  class="left ;size:auto;"style="display: flex; justify-content: center; align-items: center;">
+                            <div dir="ltr">
+                              <div >
+                                <div >
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15394.818710016818!2d44.2102585!3d15.2838927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603c51d66f2bccd%3A0x673489109e5bee!2sBlue%20Triangle%20Trading%20Limited!5e0!3m2!1sen!2s!4v1704610984949!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div style="text-align: justify; " class=" right ;size:auto; direction: rtl;" dir="rtl">
+                                 
+                                    <section id="contact" class="contact">
+                                      <form action="forms/contact.php" method="post" class="php-email-form">
+                                        <div >
+                          
+                                          <div >
+                                            <input type="text" name="name" class="form-floating" placeholder="الاسم الاول" required >
+                                            <input type="text" class="p" name="subject" placeholder=" اللقب" required>
+                                          </div>
+                                          <div >
+                                            <input type="text" name="name" class="form-floating" placeholder="رقم التلفون" required >
+                                            <input type="text" class="p" name="subject" placeholder=" الموضوع" required>
+                                          </div>
+                                          
+                                          <div >
+                                            <input type="email" class="form-floating" name="email" placeholder="الايميل" required>
+                                          </div>
+                          
+                                          <div >
+                                           
+                                          </div>
+                          
+                                          <div >
+                                            <textarea class="form-control" name="message" rows="6" placeholder="الرساله" required></textarea>
+                                          </div>
+                          
+                                          <div>
+                                            <div class="loading">Loading</div>
+                                            <div class="error-message"></div>
+                                            <div class="sent-message"> </div>
+                          
+                                           
+                                              <button type="submit"class="my-button">أرســال</button>
+                                          </div>
+                          
+                                        </div>
+                                      </form>
+                                     </section>  
+                                    
+                          </div>
+                 </div>
+                
+        </div>
+      
+</div>
+
+</div>
+  <div class="zano1">
    <footer class="Zano" dir="rtl">
-    
-    
+ <br>
+ 
+
       <div class="footer-col">
       <a href="#">
         <img class="right" src="{{ asset('images/LOGO2.svg') }}" alt="yy">
@@ -429,9 +387,10 @@
             <li><a href="#">
             اوقات الدوام :
             <br> 
-            من السبت الى الاربعاء الساعة 8:00AM الى الساعة 1:00PM
+            من السبت الى الاربعاء الساعة 8:30AM الى الساعة 1:00PM
+            من السبت الى الاربعاء الساعة 4:00PM الى الساعة 8:00PM
             <br> 
-            يوم الخميس من الساعة 8:00AM الى 1:00PM  
+            يوم الخميس من الساعة 8:30AM الى 1:00PM  
             </a></li>
             <li><a href="#">التلفونات</a></li>
             <li><a href="#">الموقع</a></li> 
@@ -457,8 +416,12 @@
       </div>
   
   </footer>
+</div>
  </div>
  
+</div>
+
+
 </div>
 
 

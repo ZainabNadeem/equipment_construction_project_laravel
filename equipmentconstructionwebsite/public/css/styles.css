@@ -826,6 +826,15 @@ text-align: center;
       
  
 }
+@media (max-width: 1200px) {
+  .menu-link .search-container .navbar .nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header-area .main-nav:before {
+    display: none;
+  }
+}
 @media only screen and (max-width: 992px) {
 .menu {
   position: fixed;
@@ -1544,7 +1553,7 @@ margin: 20px 0 10px 0;
 .contact .info-item p {
 padding: 0;
 line-height: 24px;
-font-size: 14px;
+font-size: 12px;
 margin-bottom: 0;
 }
 
@@ -1558,7 +1567,7 @@ height: 100%;
 display: none;
 background: #df1529;
 color: #ffffff;
-text-align: left;
+text-align: right;
 padding: 15px;
 margin-bottom: 24px;
 font-weight: 600;
@@ -1569,9 +1578,9 @@ display: none;
 color: #ffffff;
 background: #059652;
 text-align: center;
-padding: 15px;
+padding: 30px;
 margin-bottom: 24px;
-font-weight: 600;
+font-weight: 5;
 }
 
 .contact .php-email-form .loading {
@@ -1586,7 +1595,7 @@ margin-bottom: 24px;
 content: "";
 display: inline-block;
 border-radius: 50%;
-width: 24px;
+width: 10px;
 height: 24px;
 margin: 0 10px -6px 0;
 border: 3px solid var(--primary-color);
@@ -1594,12 +1603,20 @@ border-top-color: var(--background-color);
 animation: animate-loading 1s linear infinite;
      
 }
-
+.contact .php-email-form input[type=text]{
+  width:100px ;
+  direction: ltr;
+ 
+}
+.contact .php-email-form input[type=text] p{
+  width:100px ;
+}
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
+  margin: 1 10px -6px 0;
 font-size: 14px;
-padding: 10px 15px;
+padding: 9px 10px;
 box-shadow: none;
 border-radius: 0;
 color: var(--default-color);
