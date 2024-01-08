@@ -24,100 +24,28 @@
   </head>
   <body>
 <div class="container">
-    
-  <div class="Zano" >
-   <div class="title-line">
-   
-      <h1 class="title right"> 
-         &#9664; الوكــالات
-      </h1>
-      <div class="line right"></div>
+    <!-- logo begin -->
+    <div id="logo" >
+      <a href="#">
+          <img class="right" src="{{ asset('images/LOGO.svg') }}" alt="yy">
+      </a>
     </div>
+  <!-- logo close -->
 
-   </div>
-   <div class="Zano">
- 
-     
-    <!-- ======= Contact Section ======= -->
-    <section id="contact2" class="contact2">
-      <div class="container">
-
-        <div class="section-title">
-          <span>Contact</span>
-          <h2>Contact</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
-              <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>contact@example.com</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row" data-aos="fade-up">
-
-          <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
+  
 </div>
 
-
-
+<div class="container">
+  
 </div>
 
+<div class="container">
+  
+</div>
 
+<div class="container">
+  
+</div>
   <div class="gradient-bg">
     <svg xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -138,24 +66,10 @@
     </div>
   </div>
 
+
+
+
   
- <!-- Vendor JS Files -->
-<script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
-<script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-<script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-
-<!-- Template Main JS File -->
-<script src="{{ asset('assets/js/main.js') }}"></script>
-
-  <script>
-   function applyBlurEffect() {
-     document.body.classList.add('blur-effect');
-   }
-   
-   function removeBlurEffect() {
-     document.body.classList.remove('blur-effect');
-   }
- </script>
 <script>
       document.addEventListener('DOMContentLoaded', () => {
           const interBubble = document.querySelector('.interactive');
@@ -180,8 +94,6 @@
       });  
 </script>
 
-     <link rel="javescrupt" href="{{ asset('js/wow.min.js') }}">
-     <script src="assets/vendor/php-email-form/validate.js"></script>
-     <script src="assets/vendor/aos/aos.js"></script>
+  
   </body>
 </html>
