@@ -19,7 +19,7 @@
     <link rel="javescrupt" href="{{ asset('js/Search_event_lag.js') }}">
    
   </head>
-  <body>
+  <body >
 <div class="container">
        
         <!-- logo begin -->
@@ -128,15 +128,16 @@
  
                <div > 
                
-                        <div style="display: flex; justify-content: space-between; font-family: 'Cairo';">
-                                 <div  class="left ;size:20%;"style="display: flex; justify-content: center; align-items: center;">
+                        <div class="zai">
+                                 <div  class="left">
                                  <!-- Content of the left div -->
                                  <h1>           &nbsp;</h1>
-                                 <img src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
+                                 <img  src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
                                  </div>
-                                 <div style="text-align: justify; " class=" right ; size:20%; direction: rtl;">
+                                 <div  class=" right ">
                                     <!-- Content of the right div -->
-                                 <h1  style="direction: rtl; ">  &#9664; من نحن ؟ </h1>  
+                                 <h2  style="direction: rtl; ">  &#9664; من نحن ؟ </h2>  
+                                 <br>
                                           <p style="direction: rtl;">
                                              شركة بلو ترانجل للتجارة المحدودة عضو في مجموعة شركات عبد الله الرباعي التي تتخصص في عدة مجالات مختلفة
                                              مثل المقاولات والزراعة وأيضًا التجارة العامة تأسست الشركة في عام 2015 بشكل رسمي في الجمهورية اليمنية
@@ -425,6 +426,7 @@
 </div>
 
 
+
   <div class="gradient-bg">
     <svg xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -444,15 +446,7 @@
      
     </div>
   </div>
-  <script>
-   function applyBlurEffect() {
-     document.body.classList.add('blur-effect');
-   }
-   
-   function removeBlurEffect() {
-     document.body.classList.remove('blur-effect');
-   }
- </script>
+
 <script>
       document.addEventListener('DOMContentLoaded', () => {
           const interBubble = document.querySelector('.interactive');
