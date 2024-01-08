@@ -1,7 +1,140 @@
 
-@media screen {
 
 
+/* حدود الخلفيه */
+:root {
+  --color-bg1: rgb(0, 23, 85);  /* تعريف لون الخلفية الأول */
+  /* تعريف لون الخلفية الثاني */
+  --color3: 1, 61, 161; /* تعريف متغيرات الألوان */
+  --color2: 2, 51, 134;
+  --color3: 2, 46, 119;
+  --color4: 1, 61, 161;
+  --color-interactive: 0 , 80, 211; /* تعريف لون تفاعلي */
+  --circle-size: 80%; /* تعريف حجم عنصر الدائرة */
+  --blending: smooth;/* تعريف وضع الدمج */
+  --shadow-opacity: 0.39;
+  --white: #ffffff;
+  --blur: 10px;
+  }
+  .gradient-bg {
+  width: 100vw;
+  height: 560vh;
+  position: relative;
+  overflow: hidden;
+  background-color:  rgb(1, 11, 41);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  }
+  
+  .gradient-bg svg {
+  display: none;
+  }
+  
+  .gradient-bg .gradients-container {
+  filter: url(#goo) blur(150px);
+  width: 100%;
+  height: 100%;
+  }
+  
+  .gradient-bg .g1 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: Right Right;
+  animation: moveVertical 5s ease infinite;
+  opacity: 2;
+  --blur: 10px;
+  }
+  
+  
+  
+  
+  .gradient-bg .g2 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 400px);
+  animation: moveInCircle 8s reverse infinite;
+  opacity: 1;
+  --blur: 10px;
+  }
+  
+  .gradient-bg .g3 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2 + 200px);
+  Right: calc(50% - var(--circle-size) / 2 - 500px);
+  transform-origin: calc(50% + 400px);
+  animation: moveInCircle 11s linear infinite;
+  opacity: 1;
+  }
+  
+  .gradient-bg .g4 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 200px);
+  animation: moveHorizontal 10s ease infinite;
+  opacity: 0.7;
+  }
+  
+  .gradient-bg .g5 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: calc(var(--circle-size) * 2);
+  height: calc(var(--circle-size) * 2);
+  top: calc(50% - var(--circle-size));
+  Right: calc(50% - var(--circle-size));
+  transform-origin: calc(50% - 800px) calc(50% + 200px);
+  animation: moveInCircle 5s ease infinite;
+  opacity: 2;
+  }
+  
+  .gradient-bg .interactive {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  Right: -50%;
+  opacity: 1.7;
+  }
+  
+  /* Media Query for Tablets */
+  @media (max-width: 768px) {
+    .gradient-bg {
+      width: 100vw;
+      height: 1400vh; /* Adjust the height for tablets */
+    }
+  }
+  
+  /* Media Query for Mobile Phones */
+  @media (max-width: 480px) {
+    .gradient-bg {
+      width: 100vw;
+      height: 1400vh; /* Adjust the height for mobile phones */
+    }
+  }
     
 
 
@@ -9,12 +142,14 @@
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+
      
   }
 
   .element {
     margin: 0;
   }
+  
   
 font {
 
@@ -51,7 +186,7 @@ background: #ccc;
 #agency-menu {
 backdrop-filter: blur(10px);
 } 
-.container {
+ .container {
 width: 80%;
 z-index: 100; /*يحدد ترتيب تكديس العنصر في الصفحة بفوقية 100.*/
 position: absolute; /*يحدد نوع التمركز للعنصر بناءً على إحداثياته المحددة.*/
@@ -166,18 +301,7 @@ width: 100%;
 box-sizing: border-box; /*يحدد نموذج المربع للعنصر ليشمل الحشو والحاشية ضمن الأبعاد المحددة. */
 }
 
-@media (max-width: 768px) {
-  .container .Zano {
-    width: 80%; /* تعديل العرض للأجهزة اللوحية */
-  }
-}
 
-/* Media Query for Mobile Phones */
-@media (max-width: 480px) {
-  .container .Zano {
-    width: 90%; /* تعديل العرض للهواتف الذكية */
-  }
-}
 
 .container .Zano1 {
 width: 100%;
@@ -276,138 +400,7 @@ margin-bottom: 0;
   transform: translateX(-50%) translateY(-10%);
 }
 }
-/* حدود الخلفيه */
-:root {
---color-bg1: rgb(0, 23, 85);  /* تعريف لون الخلفية الأول */
-/* تعريف لون الخلفية الثاني */
---color3: 1, 61, 161; /* تعريف متغيرات الألوان */
---color2: 2, 51, 134;
---color3: 2, 46, 119;
---color4: 1, 61, 161;
---color-interactive: 0 , 80, 211; /* تعريف لون تفاعلي */
---circle-size: 80%; /* تعريف حجم عنصر الدائرة */
---blending: smooth;/* تعريف وضع الدمج */
---shadow-opacity: 0.39;
---white: #ffffff;
---blur: 10px;
-}
-.gradient-bg {
-width: 100vw;
-height: 550vh;
-position: relative;
-overflow: hidden;
-background-color:  rgb(1, 11, 41);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-top: 0;
-left: 0;
-}
 
-.gradient-bg svg {
-display: none;
-}
-
-.gradient-bg .gradients-container {
-filter: url(#goo) blur(150px);
-width: 100%;
-height: 100%;
-}
-
-.gradient-bg .g1 {
-position: absolute;
-background: radial-gradient(circle at Right, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 50%) no-repeat;
-mix-blend-mode: var(--blending);
-width: var(--circle-size);
-height: var(--circle-size);
-top: calc(50% - var(--circle-size) / 2);
-Right: calc(50% - var(--circle-size) / 2);
-transform-origin: Right Right;
-animation: moveVertical 5s ease infinite;
-opacity: 2;
---blur: 10px;
-}
-
-
-
-
-.gradient-bg .g2 {
-position: absolute;
-background: radial-gradient(circle at Right, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
-mix-blend-mode: var(--blending);
-width: var(--circle-size);
-height: var(--circle-size);
-top: calc(50% - var(--circle-size) / 2);
-Right: calc(50% - var(--circle-size) / 2);
-transform-origin: calc(50% - 400px);
-animation: moveInCircle 8s reverse infinite;
-opacity: 1;
---blur: 10px;
-}
-
-.gradient-bg .g3 {
-position: absolute;
-background: radial-gradient(circle at Right, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
-mix-blend-mode: var(--blending);
-width: var(--circle-size);
-height: var(--circle-size);
-top: calc(50% - var(--circle-size) / 2 + 200px);
-Right: calc(50% - var(--circle-size) / 2 - 500px);
-transform-origin: calc(50% + 400px);
-animation: moveInCircle 11s linear infinite;
-opacity: 1;
-}
-
-.gradient-bg .g4 {
-position: absolute;
-background: radial-gradient(circle at Right, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
-mix-blend-mode: var(--blending);
-width: var(--circle-size);
-height: var(--circle-size);
-top: calc(50% - var(--circle-size) / 2);
-Right: calc(50% - var(--circle-size) / 2);
-transform-origin: calc(50% - 200px);
-animation: moveHorizontal 10s ease infinite;
-opacity: 0.7;
-}
-
-.gradient-bg .g5 {
-position: absolute;
-background: radial-gradient(circle at Right, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
-mix-blend-mode: var(--blending);
-width: calc(var(--circle-size) * 2);
-height: calc(var(--circle-size) * 2);
-top: calc(50% - var(--circle-size));
-Right: calc(50% - var(--circle-size));
-transform-origin: calc(50% - 800px) calc(50% + 200px);
-animation: moveInCircle 5s ease infinite;
-opacity: 2;
-}
-
-.gradient-bg .interactive {
-position: absolute;
-background: radial-gradient(circle at Right, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
-mix-blend-mode: var(--blending);
-width: 100%;
-height: 100%;
-top: -50%;
-Right: -50%;
-opacity: 1.7;
-}
-
-/* Media Query for Tablets */
-@media (max-width: 768px) {
-  .gradient-bg {
-    height: 700vh; /* Adjust the height for tablets */
-  }
-}
-
-/* Media Query for Mobile Phones */
-@media (max-width: 480px) {
-  .gradient-bg {
-    height: 2000vh; /* Adjust the height for mobile phones */
-  }
-}
 /* تعريف أنمط لعنصر يحمل الهوية #team-members */
 #team-members {
 display: flex; /* عرض المحتوى بنظام Flex */
@@ -487,7 +480,11 @@ backdrop-filter: blur(var(--blur)); /* تطبيق تأثير ضبابية على
 filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity))); /* إضافة تأثير ظل انسيابي للقائمة */
 box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* إضافة ظل للقائمة لإعطاء تأثير ثلاثي الأبعاد */
 }
-
+.zai
+{
+  display: flex; justify-content: space-between; font-family: 'Cairo';
+  text-align: justify;
+}
 .logo-image {
 width: 50%;
 height: auto;
@@ -510,11 +507,19 @@ overflow: auto;
 .Right {
 float: Right;
 width: 40%;
+flex-wrap: wrap;
 }
 
 .right {
 float: right;
 width: 50%;
+flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .Right,
+  .right {
+    width: 100%;
+  }
 }
 .text-Right{
 text-align:Right !important; 
@@ -1915,4 +1920,5 @@ background: rgba(var(--primary-color-rgb), 0.8);
     filter: hue-rotate(240deg);
   }
 
-}
+
+
