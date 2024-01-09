@@ -1,0 +1,326 @@
+
+
+
+/* حدود الخلفيه */
+:root {
+  --color-bg1: rgb(0, 23, 85);  /* تعريف لون الخلفية الأول */
+  /* تعريف لون الخلفية الثاني */
+  --color3: 1, 61, 161; /* تعريف متغيرات الألوان */
+  --color2: 2, 51, 134;
+  --color3: 2, 46, 119;
+  --color4: 1, 61, 161;
+  --color-interactive: 0 , 80, 211; /* تعريف لون تفاعلي */
+  --circle-size: 80%; /* تعريف حجم عنصر الدائرة */
+  --blending: smooth;/* تعريف وضع الدمج */
+  --shadow-opacity: 0.39;
+  --white: #ffffff;
+  --blur: 10px;
+  }
+  .gradient-bg {
+  width: 100vw;
+  height: 560vh;
+  position: relative;
+  overflow: hidden;
+  background-color:  rgb(1, 11, 41);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  }
+  
+  .gradient-bg svg {
+  display: none;
+  }
+  
+  .gradient-bg .gradients-container {
+  filter: url(#goo) blur(150px);
+  width: 100%;
+  height: 100%;
+  }
+  
+  .gradient-bg .g1 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: Right Right;
+  animation: moveVertical 5s ease infinite;
+  opacity: 2;
+  --blur: 10px;
+  }
+  
+  
+  
+  
+  .gradient-bg .g2 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 400px);
+  animation: moveInCircle 8s reverse infinite;
+  opacity: 1;
+  --blur: 10px;
+  }
+  
+  .gradient-bg .g3 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2 + 200px);
+  Right: calc(50% - var(--circle-size) / 2 - 500px);
+  transform-origin: calc(50% + 400px);
+  animation: moveInCircle 11s linear infinite;
+  opacity: 1;
+  }
+  
+  .gradient-bg .g4 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  Right: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 200px);
+  animation: moveHorizontal 10s ease infinite;
+  opacity: 0.7;
+  }
+  
+  .gradient-bg .g5 {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: calc(var(--circle-size) * 2);
+  height: calc(var(--circle-size) * 2);
+  top: calc(50% - var(--circle-size));
+  Right: calc(50% - var(--circle-size));
+  transform-origin: calc(50% - 800px) calc(50% + 200px);
+  animation: moveInCircle 5s ease infinite;
+  opacity: 2;
+  }
+  
+  .gradient-bg .interactive {
+  position: absolute;
+  background: radial-gradient(circle at Right, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  Right: -50%;
+  opacity: 1.7;
+  }
+  
+  /* Media Query for Tablets */
+  @media (max-width: 768px) {
+    .gradient-bg {
+      width: 100vw;
+      height: 1400vh; /* Adjust the height for tablets */
+    }
+  }
+  
+  /* Media Query for Mobile Phones */
+  @media (max-width: 480px) {
+    .gradient-bg {
+      width: 100vw;
+      height: 1400vh; /* Adjust the height for mobile phones */
+    }
+  }
+    
+
+
+  html,body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+   min-height: 100vh;
+   font-family: 'Cairo';
+  }
+
+  .element {
+    margin: 0;
+  }
+  
+  
+font {
+
+    font-family: 'Cairo';  /* تعريف نوع الخط للنص */
+    font-size: 12px; /* تعريف حجم الخط */
+    font-weight: 500;/* تعريف وزن الخط */
+    color:#ffff; /* تعريف لون الخط */
+    padding: 0; /* تعريف التباعد الداخلي للعنصر */
+    line-height: 1.9em;  /* تعريف ارتفاع السطر */
+    word-spacing: 0px; /* تعريف تباعد الكلمات */
+    letter-spacing: -0.2px;/* تعريف تباعد الأحرف */
+  }
+
+  h1 {
+    line-height: 2em;
+  }
+
+/* تعريف المتغيرات المخصصة لتخطيط .g-custom */
+.g-custom {
+--bs-gutter-x: 30px; /* تعريف فجوة الاتجاه الأفقي */
+--bs-gutter-y: 30px;/* تعريف فجوة الاتجاه العمودي */
+}
+/* تعريف المتغير المخصص لتخطيط .g-custom-x */
+.g-custom-x {
+--bs-gutter-x: 30px;  /* تعريف فجوة الاتجاه الأفقي */
+}
+
+/* تعريف تأثير التمويه للخلفية */
+#a:hover + #b {
+background: #ccc;
+}
+
+/* تعريف تأثير الزجاج لقائمة الوكالات */
+#agency-menu {
+backdrop-filter: blur(10px);
+} 
+ .container {
+width: 80%;
+z-index: 1; /*يحدد ترتيب تكديس العنصر في الصفحة بفوقية 100.*/
+position: absolute; /*يحدد نوع التمركز للعنصر بناءً على إحداثياته المحددة.*/
+top: 2%; /*يحدد المسافة بين العنصر والجزء العلوي من العنصر الأب بوحدة em */
+Left: 0; /* يحدد المسافة بين العنصر والجزء الأيسر من العنصر الأب*/
+right:0; /*يحدد المسافة بين العنصر والجزء الأيمن من العنصر الأب*/ 
+justify-content: center;
+align-items: center;/* يحدد توجيه المحتوى الداخلي للعنصر بحيث يتم توسيطه في الوسط عموديًا وأفقيًا.*/
+ /*يحدد حجم الخط للنص داخل العنصر*/
+font-size: 4px; /*يحدد لون النص.*/
+color: #ffffff; /*يحدد مستوى الشفافية للعنصر بقيمة 0.8*/
+opacity:100; /*يمنع تحديد النص داخل العنصر بواسطة المستخدم */
+display: flex; /*يحدد توجيه العناصر الداخلية للعنصر الرئيسي عموديًا.*/
+flex-direction: column; /*يحدد المسافة بين العناصر الداخلية للعنصر الرئيسي.*/
+gap: 5.2px;  /*يحدد أقصى عرض للعنصر. يحدد المساقات بين ال*/
+background-color: black;
+margin: auto; /*يحدد الحشو للعنصر.*/
+padding: 30px; /* يحدد خلفية العنصر بشفافية 0.25.*/
+}
+.logo {
+width: 40%;
+align-items: right;
+float: right;
+}
+
+.img {
+  width: 40%;
+  }
+
+  .outer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .inner {
+    float:right;
+    width: 90%;
+    border: 1px solid #ccc; /* Adding borders for visualization */
+    padding: 10px;
+  }
+  
+  .inner p{
+    
+    display: flex; 
+    justify-content: space-between; 
+    font-family: 'Cairo';
+
+    text-align: justify;
+    direction: rtl;
+  }
+  .inner h2{
+    
+    display: flex; 
+    justify-content: space-between; 
+    font-family: 'Cairo';
+   
+    text-align: justify;
+    direction: rtl;
+  }
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .outer {
+      flex-direction: column;
+      width: 100%;
+    }
+    .inner {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .img {
+      float: none; /* Reset float on smaller screens */
+      width: 40%; /* Adjust image width */
+    }
+  
+  }
+/* Definitions for a vertical line */
+.my-vertical-line {
+  /* Make sure it's displayed by default */
+  width: 2px;
+  height: 280px;
+  background-color: #000;
+  margin-top: 99px;
+  margin-bottom: 1px;
+}
+
+/* Definitions for a line next to the title */
+.title-line {
+  display: block; /* Make sure it's displayed by default */
+  height: 200%;
+  display: flex;
+  font-family: 'Cairo ExtraBold';
+  font-weight: bold;
+  align-items: center;
+  direction: rtl;
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  /* Hide elements on smaller screens like phones */
+  .my-vertical-line,
+  .title-line {
+    display: none;
+  }
+ 
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  background: rgba(255, 255, 255, 0.25); /* تعيين لون خلفية شفاف باللون الأبيض لقائمة التنقل */
+  filter: blur((6%)); 
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+nav li{
+  height: 30px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+nav a:hover{
+  background-color: rgba(98, 98, 203, 0.244);
+}
