@@ -507,16 +507,26 @@ overflow: auto;
 .Right {
 float: Right;
 width: 40%;
-flex-wrap: wrap;
 }
 
 .right {
 float: right;
-width: 50%;
-flex-wrap: wrap;
+width: 60%;
 }
+
+.Zano-lefts {
+  float: left;
+
+  width: 40%;
+  align-items: center;
+  padding: 0 0 0 20px; /* Top: 0, Right: 0, Bottom: 20px, Left: 10px */
+    
+  }
+  .Zano-lefts img{
+    width: 70%;
+  }
 @media screen and (max-width: 768px) {
-  .Right,
+  .Zano-lefts,
   .right {
     width: 100%;
   }
@@ -740,23 +750,6 @@ color: black; /* لون أيقونة اللغة */
 
 .language-dropdown:hover .dropdown-menu {
   display: block;
-}
-@media only screen and (max-width: 992px) {
-.navbar-Right, .navbar-right {
-  flex: 0 0 auto;
-}
-.navbar-right {
-  align-items: Right;
-}
-.navbar-Right {
-  flex: 0 0 100%;
-  order: 3;
-  align-items: Right;
-}
-
-    
-                                            
-                               
 }
 
 .menu .menu-link::after {
