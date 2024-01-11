@@ -29,7 +29,7 @@
             </a>
           </div>
         <!-- logo close -->
-      <div class="Zano1" onmouseover="applyBlurEffect()" onmouseout="removeBlurEffect()" >  
+      <div class="Zano1">  
         <section class="navbar">
           <span class="overlay"></span>
           <div class="menu" id="menu">
@@ -129,15 +129,15 @@
                <div > 
                
                         <div class="zai">
-                                 <div  class="left">
+                                 <div class="Zano-lefts" >
                                  <!-- Content of the left div -->
                                  <h1>           &nbsp;</h1>
                                  <img  src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
                                  </div>
-                                 <div  class=" right ">
+                                 <div  class="right">
                                     <!-- Content of the right div -->
                                  <h2  style="direction: rtl; ">  &#9664; من نحن ؟ </h2>  
-                                 <br>
+                               
                                           <p style="direction: rtl;">
                                              شركة بلو ترانجل للتجارة المحدودة عضو في مجموعة شركات عبد الله الرباعي التي تتخصص في عدة مجالات مختلفة
                                              مثل المقاولات والزراعة وأيضًا التجارة العامة تأسست الشركة في عام 2015 بشكل رسمي في الجمهورية اليمنية
