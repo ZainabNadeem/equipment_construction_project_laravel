@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="javescrupt" href="{{ asset('js/Search_event_lag.js') }}">
    
   </head>
@@ -27,7 +27,10 @@
             </a>
           </div>
         <!-- logo close -->
-      <div class="Zano1" onmouseover="applyBlurEffect()" onmouseout="removeBlurEffect()" >  
+        <div id="blur-container">
+          <!-- Your menu or list element with the onclick event -->
+            <div class="menu" onclick="toggleBlurEffect()">
+             <div class="Zano1" >  
         <section class="navbar">
           <span class="overlay"></span>
           <div class="menu" id="menu">
@@ -118,7 +121,7 @@
          
        </section>
 
-  </div>
+  </div> </div> </div>
   <div >
     <div class="card-image" style="border: 1.2px solid rgba(255, 255, 255, 0.281);"> <img class="left  direction: ltr" src="{{ asset('images/Layer_1.png') }}" alt="yy"></div>
   </div>
@@ -374,14 +377,11 @@
     </div>
   </div>
   <script>
-   function applyBlurEffect() {
-     document.body.classList.add('blur-effect');
-   }
-   
-   function removeBlurEffect() {
-     document.body.classList.remove('blur-effect');
-   }
- </script>
+    function toggleBlurEffect() {
+      var blurContainer = document.getElementById('blur-container');
+      blurContainer.classList.toggle('blur-effect');
+    }
+  </script>
 <script>
       document.addEventListener('DOMContentLoaded', () => {
           const interBubble = document.querySelector('.interactive');

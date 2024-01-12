@@ -304,41 +304,38 @@
                           <div style="text-align: justify; " class=" right ;size:auto; direction: rtl;" dir="rtl">
                                  
                                     <section id="contact" class="contact">
-                                      <form action="forms/contact.php" method="post" class="php-email-form">
-                                        <div >
-                          
-                                          <div >
-                                            <input type="text" name="name" class="form-floating" placeholder="الاسم الاول" required >
-                                            <input type="text" class="p" name="subject" placeholder=" اللقب" required>
+                                     
+                                 
+                                    <div class="row input-container">
+                                        <div class="col-xs-12">
+                                          <div class="styled-input wide">
+                                            <input type="text" required />
+                                            <label>Name</label> 
                                           </div>
-                                          <div >
-                                            <input type="text" name="name" class="form-floating" placeholder="رقم التلفون" required >
-                                            <input type="text" class="p" name="subject" placeholder=" الموضوع" required>
-                                          </div>
-                                          
-                                          <div >
-                                            <input type="email" class="form-floating" name="email" placeholder="الايميل" required>
-                                          </div>
-                          
-                                          <div >
-                                           
-                                          </div>
-                          
-                                          <div >
-                                            <textarea class="form-control" name="message" rows="6" placeholder="الرساله" required></textarea>
-                                          </div>
-                          
-                                          <div>
-                                            <div class="loading">Loading</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message"> </div>
-                          
-                                           
-                                              <button type="submit"class="my-button">أرســال</button>
-                                          </div>
-                          
                                         </div>
-                                      </form>
+                                        <div class="col-md-6 col-sm-12">
+                                          <div class="styled-input">
+                                            <input type="text" required />
+                                            <label>Email</label> 
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                          <div class="styled-input" style="float:right;">
+                                            <input type="text" required />
+                                            <label>Phone Number</label> 
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                          <div class="styled-input wide">
+                                            <textarea required></textarea>
+                                            <label>Message</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                          <div class="btn-lrg submit-btn">Send Message</div>
+                                        </div>
+                                    </div>
+                                  
                                      </section>  
                                     
                           </div>

@@ -21,6 +21,7 @@
   </head>
   <body >
 <div class="container">
+  
 
        <a href="#">
            <img class="logo" src="{{ asset('images/LOGO.svg') }}" alt="yy">
@@ -54,7 +55,7 @@
          <a href="{{route('Kubota')}}"  class="subnav-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a>
          <a href="{{route('Copaz')}}" class="subnav-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a>
          <a href="{{route('KCP')}}"  class="subnav-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
-       
+        
        </div>
     </li>
     <li class="hideOnMobile"><a href="{{ route('welcome') }}"  style=" margin-right: 15px;">الرئيسه</a></li>
@@ -63,7 +64,29 @@
   </ul>
 </nav>
 
-     
+<div class="Zano1">
+  <img src="{{ asset('images/Layer_1.png') }}" alt="yy">
+</div>
+
+        <div class="containerZA">
+          <!-- First column with 1fr -->
+          <div> <p >
+            <h2> &#9664; من نحن ؟ </h2>
+            شركة بلو ترانجل للتجارة المحدودة عضو في مجموعة شركات عبد الله الرباعي التي تتخصص في عدة مجالات مختلفة
+            مثل المقاولات والزراعة وأيضًا التجارة العامة تأسست الشركة في عام 2015 بشكل رسمي في الجمهورية اليمنية
+            وتمكنت من بناء خبرة قوية وجيدة خلال السنوات منذ تأسيس شركة بلوتراتجل للتجارة المحدودة تخصصت الشركة في
+            معدات البناء وآلات الحفر وأيضًا في مجال الطاقة، المعدات الزراعية معدات الرفع وأيضًا معدات واللات خاصة
+            وقد أنشأت الشركة شبكة قوية جدًا وموثوق بها داخل وخارج اليمن مع العملاء والموردين قامت الشركة بتوسيع محفظة
+            منتجاتها لتصبح موزعًا حصريًا لأكبر العلامات التجارية مثل شركة ديفلون الكورية (معدات دوسان الثقيلة سابقًا)
+            ، شركة بوبكات التشيكية معدات البناء والحفر الخفيفة والمتوسطة) شركة بوماج الألمانية (معدات الأسفلت الثقيلة
+            والخفيفة ، شركة فارم ترك من اسكرت كابوتا الهندية (حراثات زراعية خفيفة ومتوسطة شركة كوباز الكورية (معدات
+            صيانة الطرقات وغيرها من العلامات التجارية الرائدة في المجال.
+         </p></div>
+          <div><img  src="{{ asset('images/BLUE_T.svg') }}" alt="yy"></div>
+        
+        </div>
+       
+        {{-- ----- --}}
         <!-- logo begin -->
         <div class="outer">
           <div class="outerLeft">
@@ -94,7 +117,8 @@
           </div>
     
         </div>
-     
+
+        {{-- ----- --}}
         <div class="outer">
           <div class="outerLeft">
             <div class="inner innerLeft">
@@ -104,16 +128,18 @@
               <p>This is the left side content.</p>
             </div>
           </div>
-          <hr class="my-vertical-line"> 
+         
           <div class="outerRight">
+           
             <div class="inner innerRight">
+             
               <!-- Content of the right inner div -->
               <img  src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
               <h2>Right Content</h2>
               <p>This is the right side content.</p>
             </div>
           </div>
-          <hr class="my-vertical-line"> 
+          
           <div class="outerLeft">
             <div class="inner innerLeft">
               <!-- Content of the left inner div -->
@@ -209,7 +235,12 @@
         sidebar.style.display = 'none';
       });
     });
+    function toggleBlurEffect() {
+        var blurContainer = document.getElementById('blur-container');
+        blurContainer.classList.toggle('blur-effect');
+      }
   </script>
+   
   
   </body>
 </html>
