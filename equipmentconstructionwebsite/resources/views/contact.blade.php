@@ -38,24 +38,25 @@
   </ul>
   <ul>
     <li ><a href="#">iiiالرئيسه</a></li>
-    <li class="hideOnMobile"><a href="#">الوظايف</a></li>
-    <li class="hideOnMobile"><a href="#">من نحن </a></li>
-    <li class="hideOnMobile"><a href="#">تواصل معنا</a></li>
-    <li class="hideOnMobile"><a href="#">الوكالات</a></li>
-    <ul class="hideOnMobile">
+    <li class="hideOnMobile list_item"><a href="#">الوظايف</a></li>
+    <li class="hideOnMobile list_item"><a href="#">من نحن </a></li>
+    <li class="hideOnMobile list_item"><a href="#">تواصل معنا</a></li>
+    <li class="hideOnMobile list_item"><a href="#">الوكالات</a></li>
+    
+    <li class="hideOnMobile list_item">
 
       <span><a href=" {{route('Brands')}}" class="nav-link"> الوكالmات</a><i class="bx bx-chevron-right"></i></span>
-       <div class="subnav megnav megnav-column-4">
+       <div class="subnav megnav">
        
-        <li> <a href="{{route('Develon')}}"  class="subnav-link"> <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy"></a></li>
-        <li>  <a href="{{route('Bobcat')}}"  class="subnav-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a></li>
-        <li>  <a href="{{route('Bomag')}}"  class="subnav-link"> <img src="{{ asset('images/Bomag.svg') }}" alt="yy"></a></li>
-        <li>  <a href="{{route('Kubota')}}"  class="subnav-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a></li>
-        <li>  <a href="{{route('Copaz')}}" class="subnav-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a></li>
-        <li>  <a href="{{route('KCP')}}"  class="subnav-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a></li>
+         <a href="{{route('Develon')}}"  class="subnav-link"> <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy"></a>
+         <a href="{{route('Bobcat')}}"  class="subnav-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
+         <a href="{{route('Bomag')}}"  class="subnav-link"> <img src="{{ asset('images/Bomag.svg') }}" alt="yy"></a>
+         <a href="{{route('Kubota')}}"  class="subnav-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a>
+         <a href="{{route('Copaz')}}" class="subnav-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a>
+         <a href="{{route('KCP')}}"  class="subnav-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
        
        </div>
-      </ul>
+    </li>
     <li class="hideOnMobile"><a href="{{ route('welcome') }}"  style=" margin-right: 15px;">الرئيسه</a></li>
     <li  class="show-sidebar menu-botton  "><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  style="fill: white;" height="24" viewBox="0 -960 960 960" width="24" style="color:white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 
