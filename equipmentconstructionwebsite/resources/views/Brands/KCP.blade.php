@@ -1,143 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KCP</title>
-  <style>
-    /* Paste your CSS code here */
-    /* ... */
-  </style>
-   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-   <link rel="javescrupt" href="{{ asset('js/Search_event_lag.js') }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-language" content="en,de,fr,Arb" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Tringle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
    
-</head>
-<body>
+    
+    <link rel="stylesheet" href="{{ asset('css/styles3.css') }}">
+  
+   
+  </head>
+  <body >
+<div class="container">
 
-    <div class="container">
-       
+       <a href="#">
+           <img class="logo" src="{{ asset('images/LOGO.svg') }}" alt="yy">
+        </a>
+<nav>
+  <ul class="sidebar">
+    <li class="hide-sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <li><a href="#">الرئيسه</a></li>
+    <li><a href="#">الوظايف</a></li>
+    <li><a href="#">من نحن </a></li>
+    <li><a href="#">تواصل معنا</a></li>
+    <li><a href="#">الوكالات</a></li>
+    <li><a href="#">الرئيسه</a></li>
+  </ul>
+  <ul>
+    <li ><a href="#">الرئيسه</a></li>
+    <li class="hideOnMobile"><a href="#">الوظايف</a></li>
+    <li class="hideOnMobile"><a href="#">من نحن </a></li>
+    <li class="hideOnMobile"><a href="#">تواصل معنا</a></li>
+    <li class="hideOnMobile"><a href="#">الوكالات</a></li>
+    <li class="hideOnMobile"><a href="#">الرئيسه</a></li>
+    <li  class="show-sidebar menu-botton  "><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" style="color:white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+  </ul>
+</nav>
+
+     
         <!-- logo begin -->
-           <div id="logo" >
-            <a href="#">
-                <img class="right" src="{{ asset('images/LOGO.svg') }}" alt="yy">
-            </a>
-          </div>
-        <!-- logo close -->
-      <div class="Zano1" onmouseover="applyBlurEffect()" onmouseout="removeBlurEffect()" >  
-        <section class="navbar">
-          <span class="overlay"></span>
-          <div class="menu" id="menu">
-             <div class="menu-header">
-                <span class="menu-arrow"><i class="bx bx-chevron-left"></i></span>
-                <span class="menu-title"></span>
-             </div>
-             <ul class="menu-inner">
-                <li class="menu-item"><a  href="{{ route('welcome') }}"  class="menu-link" style=" margin-right: 10px;">الرئسية</a></li>
-                <li class="menu-item"><a href="{{ route('about-us') }}"  class="menu-link">من نحن</a></li>
-                <li class="menu-item menu-dropdown">
-                  <span><a href=" {{route('Brands')}}" class="menu-link"> الوكالات</a><i class="bx bx-chevron-right"></i></span>
-                  <div class="submenu megamenu megamenu-column-4">
-                  
-                    <a href="{{route('Develon')}}"  class="submenu-link"> <img src="{{ asset('images/HD-DEVELON.svg') }}" alt="yy"></a>
-                    <a href="{{route('Bobcat')}}"  class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
-                    <a href="{{route('Bomag')}}"  class="submenu-link"> <img src="{{ asset('images/Bomag.svg') }}" alt="yy"></a>
-                    <a href="{{route('Kubota')}}"  class="submenu-link"> <img src="{{ asset('images/E-FARMTRAC.svg') }}" alt="yy"></a>
-                    <a href="{{route('Copaz')}}" class="submenu-link"> <img src="{{ asset('images/copaz.svg') }}" alt="yy"></a>
-                    <a href="{{route('KCP')}}"  class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
-                   <!--- <a href="#" class="submenu-link"> <img src="{{ asset('images/Bobcat_one_tough_animal_Black.svg') }}" alt="yy"></a>
-                     ---><div class="submenu-inner">
-                        
-                     </div>
-                   </div>
-                </li>
-                <li class="menu-item menu-dropdown">
-                   <span class="menu-link">المعرض<i class="bx bx-chevron-right"></i></span>
-                   <div class="submenu megamenu megamenu-column-4">
-                      <div class="submenu-inner"> 
-                         <a href="#" class="submenu-link">
-                           <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                            <span class="submenu-title">Product Name</span>
-                         </a>
-                      </div>
-                      <div class="submenu-inner">
-                         <a href="#" class="submenu-link">
-                           <img src="{{ asset('images/csm_BW_174_AP-5_S_d6c5327211 (1).png') }}" alt="yy">
-                            <span class="submenu-title">Product Name</span>
-                         </a>
-                      </div>
-                      <div class="submenu-inner">
-                         <a href="#" class="submenu-link">
-                           <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                            <span class="submenu-title">Product Name</span>
-                         </a>
-                      </div>
-                      <div class="submenu-inner">
-                         <a href="#" class="submenu-link">
-                           <img src="{{ asset('images/csm_BW_213_D-5_S_07a661affb.png') }}" alt="yy">
-                            <span class="submenu-title">Product Name</span>
-                         </a>
-                      </div>
-                   </div>
-                </li>
-                <li class="menu-item menu-dropdown">
-                   <span class="menu-link">الوظائف <i class="bx bx-chevron-right"></i></span>
-                </li>
-                <li class="menu-item"><a  href="{{  route('contact.submit') }}"  class="menu-link_last">تواصل معنا </a></li>
-             </ul>
-          </div>
-          <div class="section">
-            <div class="left">
-              <div class="boxdiv">
-                <form action="/saction_page.php">
-                  <input type="text" placeholder="البحـــــث عن" name="p">
-                  <span class="icon"> <i class="fa fa-search"></i></span>
-                </form>
-              </div>
+        <div class="outer">
+          <div class="outerLeft">
+            <div class="inner innerLeft">
+              <!-- Content of the left inner div -->
+    
+              <img  src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
+           
             </div>
-            <div class="left">
-              <div class="boxdiv">
-               <form action="/language_page.php">
-                  <div class="language-dropdown">
-                     <button class="dropdown-button">اختر اللغة</button>
-                     <ul class="dropdown-menu">
-                       <li class="dropdown-item">العربية</li>
-                       <li class="dropdown-item">English</li>
-                       <li class="dropdown-item">Français</li>
-                       <!-- أضف المزيد من العناصر حسب الحاجة -->
-                     </ul>
-                   </div>
-                <span class="icon">  <i class="fa fa-globe" ></i></span>
-               </form>
-              </div>
+            
+          </div>
+          <div class="outerRight">
+            <div class="inner innerRight">
+              <!-- Content of the right inner div -->
+              <h2> &#9664; من نحن ؟ </h2>
+              <p >
+                شركة بلو ترانجل للتجارة المحدودة عضو في مجموعة شركات عبد الله الرباعي التي تتخصص في عدة مجالات مختلفة
+                مثل المقاولات والزراعة وأيضًا التجارة العامة تأسست الشركة في عام 2015 بشكل رسمي في الجمهورية اليمنية
+                وتمكنت من بناء خبرة قوية وجيدة خلال السنوات منذ تأسيس شركة بلوتراتجل للتجارة المحدودة تخصصت الشركة في
+                معدات البناء وآلات الحفر وأيضًا في مجال الطاقة، المعدات الزراعية معدات الرفع وأيضًا معدات واللات خاصة
+                وقد أنشأت الشركة شبكة قوية جدًا وموثوق بها داخل وخارج اليمن مع العملاء والموردين قامت الشركة بتوسيع محفظة
+                منتجاتها لتصبح موزعًا حصريًا لأكبر العلامات التجارية مثل شركة ديفلون الكورية (معدات دوسان الثقيلة سابقًا)
+                ، شركة بوبكات التشيكية معدات البناء والحفر الخفيفة والمتوسطة) شركة بوماج الألمانية (معدات الأسفلت الثقيلة
+                والخفيفة ، شركة فارم ترك من اسكرت كابوتا الهندية (حراثات زراعية خفيفة ومتوسطة شركة كوباز الكورية (معدات
+                صيانة الطرقات وغيرها من العلامات التجارية الرائدة في المجال.
+             </p>
             </div>
           </div>
-         
-       </section>
-  </div>
+    
+        </div>
+     
+        <div class="outer">
+          <div class="outerLeft">
+            <div class="inner innerLeft">
+              <!-- Content of the left inner div -->
+              <img  src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
+              <h2>Left Content</h2>
+              <p>This is the left side content.</p>
+            </div>
+          </div>
+          <hr class="my-vertical-line"> 
+          <div class="outerRight">
+            <div class="inner innerRight">
+              <!-- Content of the right inner div -->
+              <img  src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
+              <h2>Right Content</h2>
+              <p>This is the right side content.</p>
+            </div>
+          </div>
+          <hr class="my-vertical-line"> 
+          <div class="outerLeft">
+            <div class="inner innerLeft">
+              <!-- Content of the left inner div -->
+              <img  src="{{ asset('images/BLUE_T.svg') }}" alt="yy">
+              <h2>Left Content</h2>
+              <p>This is the left side content.</p>
+            </div>
+          </div>
+        </div>
 
+ 
+	<div class="row">
+			<h1>contact us</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+	</div>
+
+  <div >
+    <div class="item item-1">1</div>
+     <div class="item item-2">2</div>
+     <div class="item item-3">3</div>
+     <div class="item item-4">4</div> 
+     <div class="item item-5">5</div>
+    
+   </div>
 </div>
+
+
+
+
+
   <div class="gradient-bg">
-    <svg>
-      <!-- SVG Definitions for filters -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
     </svg>
     <div class="gradients-container">
-      <div class="g1"></div>
+     <div class="g1"></div>
       <div class="g2"></div>
       <div class="g3"></div>
-      <div class="g4"></div>
-      <div class="g5"></div>
-      <div class="interactive"></div>
+      <div class="g4"></div> 
+      <div class="g3"></div>
+     
     </div>
   </div>
-
-  <div id="team-members">
-    <!-- Your content for the About Us page goes here -->
-    <h1>About Us</h1>
-    <p>Welcome to our amazing team!</p>
-    <!-- Add more content as needed -->
-  </div>
-
-  <!-- Additional HTML or scripts can go here -->
-
-</body>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const showSidebarButton = document.querySelector('.show-sidebar');
+      const hideSidebarButton = document.querySelector('.hide-sidebar');
+      const sidebar = document.querySelector('.sidebar');
+  
+      showSidebarButton.addEventListener('click', function () {
+        sidebar.style.display = 'flex';
+      });
+  
+      hideSidebarButton.addEventListener('click', function () {
+        sidebar.style.display = 'none';
+      });
+    });
+  </script>
+  
+  </body>
 </html>
