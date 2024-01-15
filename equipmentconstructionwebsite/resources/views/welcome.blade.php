@@ -92,32 +92,6 @@
                 <li class="menu-item"><a href="{{  route('contact.submit') }}" class="menu-link_last">تواصل معنا </a></li>
              </ul>
           </div>
-          <div class="section">
-            <div class="left">
-              <div class="boxdiv">
-                <form action="/saction_page.php">
-                  <input type="text" placeholder="البحـــــث عن" name="p">
-                  <span class="icon"> <i class="fa fa-search"></i></span>
-                </form>
-              </div>
-            </div>
-            <div class="left">
-              <div class="boxdiv">
-               <form action="/language_page.php">
-                  <div class="language-dropdown">
-                     <button class="dropdown-button">اختر اللغة</button>
-                     <ul class="dropdown-menu">
-                       <li class="dropdown-item">العربية</li>
-                       <li class="dropdown-item">English</li>
-                       <li class="dropdown-item">Français</li>
-                       <!-- أضف المزيد من العناصر حسب الحاجة -->
-                     </ul>
-                   </div>
-                <span class="icon">  <i class="fa fa-globe" ></i></span>
-               </form>
-              </div>
-            </div>
-          </div>
          
        </section>
   </div>
@@ -344,6 +318,28 @@
         </div>
       
 </div>
+<a href="https://wa.me/918789529215?text=Hi%20There!"
+class="float"
+style="
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 70px;
+  right: 120px;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #999;
+"
+>
+<img
+  src="https://trickuweb.com/whatsapp.png"
+  alt=""
+  height="60px"
+  width="60px"
+/>
+</a>
 
 </div>
   <div class="zano1">
